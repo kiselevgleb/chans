@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './css/style.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { createBrowserHistory } from "history";
+import Main from './components/Main';
+import Order from './components/Order';
+import Error404 from './components/Error404';
 
-function App() {
+function App(props) {
+  const customHistory = createBrowserHistory();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Router history={customHistory}>
+        <Switch>
+          <Route path='/order' component={Order} />
+          <Route exact path='/' component={Main} />
+          <Route path='/' component={Error404} />
+        </Switch>
+      </Router>
+    </>
   );
 }
 
