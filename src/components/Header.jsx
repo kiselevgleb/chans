@@ -1,22 +1,22 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment } from 'react';
 import iconRef from '../img/icon.png';
 import iconVec from '../img/vector.png';
 import iconLogo from '../img/logo-big.png';
-import { useDispatch, useSelector } from 'react-redux';
-import { changeInputCheckbox, getCityIdRequest, changeSearchField, getTicketsDataRequest } from '../actions/actionCreators';
-import { NavLink } from 'react-router-dom'
+// import { useDispatch, useSelector } from 'react-redux';
+// import { changeInputCheckbox, getCityIdRequest, changeSearchField, getTicketsDataRequest } from '../actions/actionCreators';
+// import { NavLink } from 'react-router-dom'
 
 export default function Header(props) {
-    const { search, cities } = useSelector(state => state.skills);
-    const [city, setCity] = useState([]);
-    const dispatch = useDispatch();
-    const handleSearch = evt => {
-        console.log(cities)
-        const { value } = evt.target;
-        dispatch(changeSearchField(value));
-        let mas = city;
-        setCity(mas.concat(cities));
-    };
+    // const { search, cities } = useSelector(state => state.skills);
+    // const [city, setCity] = useState([]);
+    // const dispatch = useDispatch();
+    // const handleSearch = evt => {
+    //     console.log(cities)
+    //     const { value } = evt.target;
+    //     // dispatch(changeSearchField(value));
+    //     let mas = city;
+    //     setCity(mas.concat(cities));
+    // };
     const getTickets = (evt) => {
         evt.preventDefault();
         // dispatch(getCityIdRequest(evt.target.from.value));
