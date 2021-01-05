@@ -17,10 +17,10 @@ function App(props) {
       <Router history={customHistory}>
         <Switch>
           <Route exact path='/chans/build/' component={Main} />
-          <Route  path='/chans/build/contacts' component={Contacts} />
-          <Route  path='/chans/build/faq' component={Faq} />
-          <Route  path='/chans/build/reference' component={Reference} />
-          <Route path='/' component={Error404} />
+          <Route path='/chans/build/contacts' component={Contacts} />
+          <Route path='/chans/build/faq' component={Faq} />
+          <Route path='/chans/build/reference' component={Reference} />
+          <Route path='/chans/build/' component={Error404} />
 
           {/* <Route exact path='/' component={Main} />
           <Route exact path='/contacts' component={Contacts} />
