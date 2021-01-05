@@ -55,14 +55,14 @@ body {
   align-items: center;
   height: 450px;
   position: relative;
-  background: #9B6909 center url(../img/header-back.png) no-repeat;
+  background: #9B6909 center url(../img/header-back.jpg) no-repeat;
   background-size: cover;
   margin-bottom: 50px;
 }
 
 .header-container-order {
   height: 300px;
-  background: #292929 center url(../img/header-order.png) no-repeat;
+  background: #292929 center url(../img/header-order.jpg) no-repeat;
 }
 
 .work-container {
