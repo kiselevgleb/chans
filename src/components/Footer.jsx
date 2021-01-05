@@ -5,10 +5,6 @@ import skype from '../img/skype.png';
 import vector from '../img/vector.png';
 import mail from '../img/mail.png';
 import f from '../img/f.png';
-import l from '../img/l.png';
-import y from '../img/y.png';
-import g from '../img/g.png';
-import t from '../img/t.png';
 import str from '../img/str.png';
 import iconLogo from '../img/logo-white.png';
 export default function Footer(props) {
@@ -29,8 +25,12 @@ export default function Footer(props) {
                                 <p className="fb-text">info@chansbattery.ca</p>
                             </div>
                             <div className="fb-cont">
-                                <img className="fb-point" src={skype} alt="next"></img>
-                                <p className="fb-text">skype</p>
+                                {/* <img className="fb-point" src={skype} alt="next"></img> */}
+                                {/* <p className="fb-text">skype</p> */}
+                                <img className="fb-point-small" src={f} alt="Facebook"></img>
+                                <a className="contact-link" href="https://www.facebook.com/chansbatteryrebuild" >  Facebook</a>
+
+                                {/* <p className="fb-text">skype</p> */}
                             </div>
                             <div className="fb-cont">
                                 <img className="fb-point" src={vector} alt="next"></img>

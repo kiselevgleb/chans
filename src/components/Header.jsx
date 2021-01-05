@@ -43,7 +43,7 @@ export default function Header(props) {
                     <div className="row header-contact" >
                         {/* <NavLink className="navbar-brand" exact to="/react-shoe-store/build/"> */}
                             {/* <img src='' alt="" /> */}
-                            <p className="header-contact-text">Tel: 226-977-0998, e-mail: info@chansbattery.ca</p>
+                            <p className="header-contact-text"> <a className="contact-link" href="tel:226-977-0998">Tel: 226-977-0998</a>, e-mail:<a className="contact-link" href="mailto:info@chansbattery.ca">info@chansbattery.ca</a> </p>
                             {/* <p className="header-contact-text-right">8138 batteries rebuilt, 7 m3 waste reduced, 16 years' experience</p> */}
                         {/* </NavLink> */}
                     </div>
@@ -54,22 +54,24 @@ export default function Header(props) {
                             <div className="col">
                                 <ul className="navbar-nav mr-auto">
                                     <li className="nav-item">
-                                        <a className="nav-link" href="" >Why Rebuild</a>
+                                        <a className="nav-link" href="/chans/build" >Why Rebuild</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="" >Batteries and Pricing</a>
+                                        <a className="nav-link" href="/chans/build" >Batteries and Pricing</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="" >About us and References</a>
+                                        <a className="nav-link" href="/chans/build/references" >About us and References</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="" >FAQ</a>
+                                        <a className="nav-link" href="/chans/build/faq" >FAQ</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="" >Forum</a>
+                                        <a className="nav-link" href="http://chansbattery.ca/forum/index.php" >Forum</a>
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link-end" href="" >Contact</a>
+                                        {/* <a className="nav-link-end" href="/contacts" >Contact</a> */}
+                                        <a className="nav-link-end" href="/chans/build/contacts" >Contact</a>
+
                                     </li>
                                 </ul>
                             </div>

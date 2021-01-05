@@ -55,7 +55,7 @@ body {
   align-items: center;
   height: 450px;
   position: relative;
-  background: #9B6909 center url(../img/header-back.jpg) no-repeat;
+  background: #68bb53 center url(../img/header-back.jpg) no-repeat;
   background-size: cover;
   margin-bottom: 50px;
 }
@@ -64,14 +64,19 @@ body {
   height: 300px;
   background: #292929 center url(../img/header-order.png) no-repeat;
 }
-
+.contact-link{
+  color: #FFFFFF;
+}
+.contact-link:hover{
+  color: #b9b9b9;
+}
 .work-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 450px;
   position: relative;
-  background: #9B6909 center url(../img/mask-group.gif) no-repeat;
+  background: #68bb53 center url(../img/mask-group.gif) no-repeat;
   background-size: cover;
   margin-bottom: 60px;
   /* margin-top: 60px; */
@@ -460,7 +465,9 @@ h2 {
   height: 15px;
   margin-right: 25px;
 }
-
+.fb-point-small {
+  margin-right: 30px;
+}
 .fb-text {
   color: rgb(255, 255, 255);
   font-size: 14px;

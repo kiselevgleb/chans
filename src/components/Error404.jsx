@@ -11,8 +11,8 @@ export default function Error404(props) {
                 <div className="row">
                     <div className="col">
                         <section className="top-sales">
-                            <h2 className="text-center">Страница не найдена</h2>
-                            <p>Извините, такая страница не найдена!</p>
+                            <h2 className="text-center">Error 404</h2>
+                            <p>Page not found</p>
                         </section>
                     </div>
                 </div>
