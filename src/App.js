@@ -15,7 +15,7 @@ function App(props) {
         <Switch>
           {/* <Route path='/order' component={Order} /> */}
           <Route exact path='/chans/build/' component={Main} />
-          <Route path='/chans/build/' component={Error404} />
+          <Route path='/' component={Error404} />
         </Switch>
       </Router>
     </>
