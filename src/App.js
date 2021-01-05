@@ -14,8 +14,8 @@ function App(props) {
       <Router history={customHistory}>
         <Switch>
           {/* <Route path='/order' component={Order} /> */}
-          <Route exact path='/chans/public/' component={Main} />
-          <Route path='/' component={Error404} />
+          <Route exact path='/chans/build/' component={Main} />
+          <Route path='/chans/build/' component={Error404} />
         </Switch>
       </Router>
     </>
