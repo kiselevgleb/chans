@@ -40,13 +40,13 @@ export default function Header(props) {
         <Fragment>
             <header class="header-container">
                 {/* <div className="wrap"> */}
-                    <div className="row header-contact" >
-                        {/* <NavLink className="navbar-brand" exact to="/react-shoe-store/build/"> */}
-                            {/* <img src='' alt="" /> */}
-                            <p className="header-contact-text"> <a className="contact-link" href="tel:226-977-0998">Tel: 226-977-0998</a>, e-mail:<a className="contact-link" href="mailto:info@chansbattery.ca">info@chansbattery.ca</a> </p>
-                            {/* <p className="header-contact-text-right">8138 batteries rebuilt, 7 m3 waste reduced, 16 years' experience</p> */}
-                        {/* </NavLink> */}
-                    </div>
+                <div className="row header-contact" >
+                    {/* <NavLink className="navbar-brand" exact to="/react-shoe-store/build/"> */}
+                    {/* <img src='' alt="" /> */}
+                    <p className="header-contact-text"> <a className="contact-link" href="tel:226-977-0998">Tel: 226-977-0998</a>, e-mail:<a className="contact-link" href="mailto:info@chansbattery.ca">info@chansbattery.ca</a> </p>
+                    {/* <p className="header-contact-text-right">8138 batteries rebuilt, 7 m3 waste reduced, 16 years' experience</p> */}
+                    {/* </NavLink> */}
+                </div>
                 {/* </div> */}
                 <nav className="navbar">
                     <div className="wrap">
@@ -65,12 +65,29 @@ export default function Header(props) {
                                     </li>
                                     <li className="nav-item">
                                         {/* <a className="nav-link" href="/chans/build/references" >About us and References</a> */}
-                                        <NavLink className="nav-link" exact to="/chans/build/references">About us and References</NavLink>
-
+                                        {/* <NavLink className="nav-link" exact to="/chans/build/references">About us and References</NavLink> */}
+                                        {/* <div class="dropdown-content">
+                                            <a href="#">Link 1</a>
+                                            <a href="#">Link 2</a>
+                                            <a href="#">Link 3</a>
+                                        </div> */}
+                                        <div class="dropdown">
+                                            <NavLink className="nav-link" exact to="/chans/build/references">About us and References</NavLink>
+                                            <div class="dropdown-content">
+                                                <NavLink className="nav-link-a" exact to="/chans/build/references">Our clients say</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/blog">Blog</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/chans">Our Story</NavLink>
+                                            </div>
+                                        </div>
                                     </li>
                                     <li className="nav-item">
-                                        {/* <a className="nav-link" href="/chans/build/faq" >FAQ</a> */}
-                                        <NavLink className="nav-link" exact to="/chans/build/faq">FAQ</NavLink>
+                                        <div class="dropdown">
+                                            <NavLink className="nav-link" exact to="/chans/build/faq">FAQ</NavLink>
+                                            <div class="dropdown-content">
+                                                <NavLink className="nav-link-a" exact to="/chans/build/faq">You Ask</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/warranty">Warranty</NavLink>
+                                            </div>
+                                        </div>
 
                                     </li>
                                     <li className="nav-item">
@@ -102,21 +119,21 @@ export default function Header(props) {
                         </div>
                         <div className="col">
                             <form className="calc" onSubmit={getTickets}>
-                                
+
                                 <div className="inp-from-location">
                                     {/* <p className="calc-text-header">Message:</p> */}
                                     <p className="calc-text">Name*</p>
                                     <p className="inline">
-                                        <input list="cities-from" id="from" className="inp-date" type="text" placeholder="Откуда" type="search"  />
+                                        <input list="cities-from" id="from" className="inp-date" type="text" placeholder="Откуда" type="search" />
                                     </p>
                                 </div>
                                 <div className="inp-from-date">
                                     <p className="calc-text">Email address*</p>
-                                    <input className="inp-date" id="date" type="mail"  />
+                                    <input className="inp-date" id="date" type="mail" />
                                 </div>
                                 <div className="inp-from-date">
                                     <p className="calc-text">Your message</p>
-                                    <input className="inp-date" id="date" type="text"  />
+                                    <input className="inp-date" id="date" type="text" />
                                 </div>
                                 <button type="submit" className="but-from">SEND MESSAGE</button>
                             </form>

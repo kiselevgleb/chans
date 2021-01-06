@@ -6,8 +6,10 @@ import Main from './components/Main';
 import Contacts from './components/Contacts';
 import Faq from './components/Faq';
 import Reference from './components/Reference';
-import Order from './components/Order';
 import Error404 from './components/Error404';
+import Warranty from './components/Warranty';
+import Chans from './components/Story';
+import Blog from './components/Blog';
 
 function App(props) {
   const customHistory = createBrowserHistory();
@@ -19,7 +21,11 @@ function App(props) {
 
           <Route path='/chans/build/contacts' component={Contacts} />
           <Route path='/chans/build/faq' component={Faq} />
+          <Route path='/chans/build/warranty' component={Warranty} />
           <Route path='/chans/build/references' component={Reference} />
+          <Route path='/chans/build/chans' component={Chans} />
+          <Route path='/chans/build/blog' component={Blog} />
+
           <Route exact path='/chans/build/' component={Main} />
           <Route path='/chans/build/' component={Error404} />
 

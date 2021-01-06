@@ -21,7 +21,6 @@ export default function Contacts(props) {
                 </div>
             </main>
             <Feedback history={props.history}></Feedback>
-
             <Footer history={props.history}></Footer>
         </Fragment>
     )
