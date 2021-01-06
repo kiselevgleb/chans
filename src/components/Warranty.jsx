@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import Footer from './Footer';
 import Header from './Header';
-export default function Contacts(props) {
+export default function Warranty(props) {
 
     return (
         <Fragment>

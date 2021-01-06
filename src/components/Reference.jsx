@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import Feedback from './Feedback';
-export default function Contacts(props) {
+export default function Reference(props) {
 
     return (
         <Fragment>

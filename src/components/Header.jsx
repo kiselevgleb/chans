@@ -54,23 +54,33 @@ export default function Header(props) {
                             <div className="col">
                                 <ul className="navbar-nav mr-auto">
                                     <li className="nav-item">
-                                        <a className="nav-link" href="/chans/build" >Why Rebuild</a>
+                                        {/* <a className="nav-link" href="/chans/build" >Why Rebuild</a> */}
+                                        <NavLink className="nav-link" exact to="/chans/build/">Why Rebuild</NavLink>
+
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="/chans/build" >Batteries and Pricing</a>
+                                        {/* <a className="nav-link" href="/chans/build" >Batteries and Pricing</a> */}
+                                        <NavLink className="nav-link" exact to="/chans/build/">Batteries and Pricing</NavLink>
+
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="/chans/build/references" >About us and References</a>
+                                        {/* <a className="nav-link" href="/chans/build/references" >About us and References</a> */}
+                                        <NavLink className="nav-link" exact to="/chans/build/references">About us and References</NavLink>
+
                                     </li>
                                     <li className="nav-item">
-                                        <a className="nav-link" href="/chans/build/faq" >FAQ</a>
+                                        {/* <a className="nav-link" href="/chans/build/faq" >FAQ</a> */}
+                                        <NavLink className="nav-link" exact to="/chans/build/faq">FAQ</NavLink>
+
                                     </li>
                                     <li className="nav-item">
                                         <a className="nav-link" href="http://chansbattery.ca/forum/index.php" >Forum</a>
                                     </li>
                                     <li className="nav-item">
                                         {/* <a className="nav-link-end" href="/contacts" >Contact</a> */}
-                                        <a className="nav-link-end" href="/chans/build/contacts" >Contact</a>
+                                        {/* <a className="nav-link-end" href="/chans/build/contacts" >Contact</a> */}
+                                        <NavLink className="nav-link" exact to="/chans/build/contacts">Contact</NavLink>
+
 
                                     </li>
                                 </ul>

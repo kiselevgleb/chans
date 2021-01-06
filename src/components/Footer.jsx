@@ -18,11 +18,15 @@ export default function Footer(props) {
                             <h2 className="h2-black h2-mar">Contact us</h2>
                             <div className="fb-cont">
                                 <img className="fb-point" src={phone} alt="next"></img>
-                                <p className="fb-text">226-977-0998</p>
+                                {/* <p className="fb-text">226-977-0998</p> */}
+                                <a className="contact-link" href="tel:226-977-0998">Tel: 226-977-0998</a>
+
                             </div>
                             <div className="fb-cont">
                                 <img className="fb-point" src={mail} alt="next"></img>
-                                <p className="fb-text">info@chansbattery.ca</p>
+                                {/* <p className="fb-text">info@chansbattery.ca</p> */}
+                                <a className="contact-link" href="mailto:info@chansbattery.ca">info@chansbattery.ca</a>
+
                             </div>
                             <div className="fb-cont">
                                 {/* <img className="fb-point" src={skype} alt="next"></img> */}
