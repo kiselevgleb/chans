@@ -31,7 +31,7 @@ body {
 } */
 
 .dropdown {
-  display: inline-block;
+  display: inline;
 }
 .dropdown-content {
   display: none;
