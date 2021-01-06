@@ -60,8 +60,25 @@ export default function Header(props) {
                                     </li>
                                     <li className="nav-item">
                                         {/* <a className="nav-link" href="/chans/build" >Batteries and Pricing</a> */}
+                                        <div class="dropdown">
                                         <NavLink className="nav-link" exact to="/chans/build/">Batteries and Pricing</NavLink>
+                                            <div class="dropdown-content">
+                                                <NavLink className="nav-link-a" exact to="/chans/build/">Electric bikes</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/">Power Tools</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/">Laptops</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/">Air Respirators</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/">Barcode Scanners</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/">Dive Vehicles</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/">Cable Testers</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/">Flash systems</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/">Lawn Care Tools</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/">Spectrum Analyzers</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/">Survey Instruments</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/">Vacuum cleaners</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/">Other Equipment</NavLink>
 
+                                            </div>
+                                        </div>
                                     </li>
                                     <li className="nav-item">
                                         {/* <a className="nav-link" href="/chans/build/references" >About us and References</a> */}
