@@ -4,7 +4,7 @@ import iconVec from '../img/vector.png';
 import iconLogo from '../img/logo-big.png';
 // import { useDispatch, useSelector } from 'react-redux';
 // import { changeInputCheckbox, getCityIdRequest, changeSearchField, getTicketsDataRequest } from '../actions/actionCreators';
-// import { NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export default function Header(props) {
     // const { search, cities } = useSelector(state => state.skills);
