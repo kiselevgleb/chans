@@ -61,21 +61,21 @@ export default function Header(props) {
                                     <li className="nav-item">
                                         {/* <a className="nav-link" href="/chans/build" >Batteries and Pricing</a> */}
                                         <div class="dropdown">
-                                        <NavLink className="nav-link" exact to="/chans/build/">Batteries and Pricing</NavLink>
+                                        <NavLink className="nav-link" exact to="/chans/build/ebike-battery-rebuild">Batteries and Pricing</NavLink>
                                             <div class="dropdown-content">
-                                                <NavLink className="nav-link-a" exact to="/chans/build/">Electric bikes</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/">Power Tools</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/">Laptops</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/">Air Respirators</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/">Barcode Scanners</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/">Dive Vehicles</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/">Cable Testers</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/">Flash systems</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/">Lawn Care Tools</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/">Spectrum Analyzers</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/">Survey Instruments</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/">Vacuum cleaners</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/">Other Equipment</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/ebike-battery-rebuild">Electric bikes</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/drill-battery-rebuild">Power Tools</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/laptop-battery-rebuild">Laptops</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/air-respirator-battery-rebuild">Air Respirators</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/barcode-scanner-battery-rebuild">Barcode Scanners</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/cable-tester-battery-rebuild">Cable Testers</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/dive-vehicle-battery-rebuild">Dive Vehicles</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/flash-battery-rebuild">Flash systems</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/lawn-care-battery-rebuild">Lawn Care Tools</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/spectrum-analyzer-battery-rebuild">Spectrum Analyzers</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/survey-instrument-battery-rebuild">Survey Instruments</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/vacuum-cleaners-battery-rebuild">Vacuum cleaners</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans/build/battery-rebuild">Other Equipment</NavLink>
 
                                             </div>
                                         </div>

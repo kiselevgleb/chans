@@ -2,7 +2,9 @@ import React, { Fragment } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import Feedback from './Feedback';
-export default function Contacts(props) {
+import Bionx from '../img/bionx.jpg';
+
+export default function ElectricBikes(props) {
 
     return (
         <Fragment>
@@ -11,11 +13,22 @@ export default function Contacts(props) {
                 <div className="row">
                     <div className="col">
                         <section className="top-sales">
-                            <h2 className="text-center">Contact</h2>
-                            <p>CHANS Battery Rebuild is located in London Ontario Canada. We are committed to offering a high-quality service while maintaining great prices for our customers. For this reason, we operate a home-based business.</p>
-                            <p>Please, call us <a href="tel:226-977-0998">226-977-0998</a>, email <a href="mailto:info@chansbattery.ca">info@chansbattery.ca</a> or <a href="mailto:chansbattery@gmail.com">chansbattery@gmail.com</a> and we will be happy to tell you the address and meet with you.</p>
-                            <p>You can drop off a battery or send it by Canada Post or other courier companies. The back shipping is paid by a customer as well.</p>
-                            <p>Attention the US and other international customers: filling in the customs declaration make sure the the value is zero to avoid Entry Clearence Fee. Should any duties and taxes arise, it is a customer's responsibility to pay them.</p>
+                            <h2 className="text-center">Electric Bike Li-ion Battery Rebuild</h2>
+                            <p>Save money and enjoy riding!</p>
+                            <p>We can rebuild Li-ion batteries for electric bikes such as <b>BionX, Igo, Pedego, Easy Motion</b> and other brands. Our rebuilt Li-ion batteries are 100% genuine batteries in the old case. We use the freshest, high-quality and the high-power Samsung 2.5Ah 20A cells. The cells are balanced and connected with the spot welder. Warranty 12 months.  <a href="/chans/build/warranty">Read more</a></p>
+                            <img src={Bionx} alt="Bionx"></img>
+                            <p>The price depends on the kind and the number of the li-ion cells that are inside the battery. The table below shows the approximate prices for the rebuilt batteries with the capacities we can make. For example, in 36V 10Ah battery there can be from 40 till 60 cells. So we can make from 10Ah up to 15 Ah. using our 2.5Ah cells. The price doesn't include the BMS (Battery management System) if it is faulty and needs replacing. So far, as a small supplier, we don't charge the GST/HTS!</p>
+                            <table className="tab">
+                                <tr className="tr">
+                                    <td className="tb">Voltage V </td><td colspan="2">24</td><td colspan="3">36</td><td colspan="3">48</td>
+                                </tr>
+                                <tr className="tr">
+                                    <td className="tb">Capacity Ah </td><td>10 </td><td>12.5</td><td>10</td><td>12.5</td><td>15</td><td>10</td><td>12.5</td><td>15</td>
+                                </tr>
+                                <tr className="tr tr-col">
+                                    <td className="tb">$ CAD </td><td> 329.00 </td><td> 359.00 </td><td> 379.00 </td><td> 429.00 </td><td> 479.00 </td><td> 439.00 </td><td> 499.00 </td><td> 559.00 </td>
+                                </tr>
+                            </table>
                         </section>
                     </div>
                 </div>

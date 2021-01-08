@@ -29,7 +29,32 @@ body {
   align-items: center;
   position: relative;
 } */
+/* .batteries{
+  display: inline;
+} */
 
+.tab{
+  border: 1px solid  #aeceaf;
+  text-align: center;
+}
+.tab tr{
+  border: 1px solid  #aeceaf;
+}
+.tab th{
+  border: 1px solid  #aeceaf;
+  padding: 10px;
+}
+.tab td{
+  border: 1px solid  #aeceaf;
+  padding: 10px;
+}
+.tb{
+  text-align: left;
+  font-weight:bold;
+}
+.tr-col{
+  background-color: #f1fff1;
+}
 .dropdown {
   display: inline;
 }
