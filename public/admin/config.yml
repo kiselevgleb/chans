@@ -1,6 +1,7 @@
 backend:
   # name: https://github.com/kiselevgleb/chans
   name: git-gateway
+  repo: kiselevgleb/chans
   branch: master # Branch to update (optional; defaults to master)
 media_folder: "src/img/" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/static/media" # The src attribute for uploaded media will begin with /images/uploads
