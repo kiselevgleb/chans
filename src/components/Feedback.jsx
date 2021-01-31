@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import point from '../img/point.png';
-import ref from '../reference.json';
+import ref from '../content/reference.json';
 
 export default function Feedback(props) {
     const [refData, setRefData] = useState(ref.slice(0, 3));

@@ -23,6 +23,8 @@ import SpectrumAnalyzer from './components/SpectrumAnalyzer';
 import SurveyInstrument from './components/SurveyInstrument';
 import VacuumCleaner from './components/VacuumCleaner';
 import OtherEquipment from './components/OtherEquipment';
+// import Admin from 'netlify-cms';
+// import Admin from 'netlify-cms-app'
 
 
 function App(props) {
@@ -52,6 +54,7 @@ function App(props) {
           <Route path='/chans/build/survey-instrument-battery-rebuild' component={SurveyInstrument} />
           <Route path='/chans/build/vacuum-cleaners-battery-rebuild' component={VacuumCleaner} />
           <Route path='/chans/build/battery-rebuild' component={OtherEquipment} />
+          {/* <Route exact path='/' component={Main} /> */}
 
           
           <Route exact path='/chans/build/' component={Main} />

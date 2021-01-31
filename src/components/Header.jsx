@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState } from 'react';
 import iconRef from '../img/icon.png';
 import iconVec from '../img/vector.png';
 import iconLogo from '../img/logo-big.png';
@@ -8,7 +8,10 @@ import { NavLink } from 'react-router-dom'
 
 export default function Header(props) {
     // const { search, cities } = useSelector(state => state.skills);
-    // const [city, setCity] = useState([]);
+    // const [name, setName] = useState("");
+    // const [email, setEmail] = useState("");
+    // const [mes, setMes] = useState("");
+
     // const dispatch = useDispatch();
     // const handleSearch = evt => {
     //     console.log(cities)
@@ -17,24 +20,44 @@ export default function Header(props) {
     //     let mas = city;
     //     setCity(mas.concat(cities));
     // };
-    const getTickets = (evt) => {
+    // const getTickets = (evt) => {
+    // evt.preventDefault();
+    // dispatch(getCityIdRequest(evt.target.from.value));
+    // const { value } = evt.target.from;
+    // changeSearchField(value);
+    // dispatch(getCityIdRequest(evt.target.from.value));
+    // const to = cities.filter(O => O.name === evt.target.to.value);
+    // const from = city.filter(O => O.name === evt.target.from.value);
+
+    // dispatch(changeInputCheckbox("from_city_id", from[0]._id));
+    // dispatch(changeInputCheckbox("to_city_id", to[0]._id));
+    // dispatch(changeInputCheckbox("date_start", evt.target.date.value));
+    // dispatch(changeInputCheckbox("date_end", evt.target.date_end.value));
+
+    // dispatch(getTicketsDataRequest({ "from_city_id": from[0]._id, "to_city_id": to[0]._id, "date_start": evt.target.date.value, "date_end": evt.target.date_end.value, }));
+    // // }
+    // props.history.push(`/order`);
+    // };
+    const sentMessage = (evt) => {
         evt.preventDefault();
-        // dispatch(getCityIdRequest(evt.target.from.value));
-        // const { value } = evt.target.from;
-        // changeSearchField(value);
-        // dispatch(getCityIdRequest(evt.target.from.value));
-        // const to = cities.filter(O => O.name === evt.target.to.value);
-        // const from = city.filter(O => O.name === evt.target.from.value);
+        // if (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test($(evt.target[1].value).val())) { 
+            // /* return true */ }
 
-        // dispatch(changeInputCheckbox("from_city_id", from[0]._id));
-        // dispatch(changeInputCheckbox("to_city_id", to[0]._id));
-        // dispatch(changeInputCheckbox("date_start", evt.target.date.value));
-        // dispatch(changeInputCheckbox("date_end", evt.target.date_end.value));
+        if (evt.target[0].value==="") {
+            evt.target[0].className = "inp-date inp-date-border";
+            console.log(111)
 
-        // dispatch(getTicketsDataRequest({ "from_city_id": from[0]._id, "to_city_id": to[0]._id, "date_start": evt.target.date.value, "date_end": evt.target.date_end.value, }));
-        // // }
-        // props.history.push(`/order`);
+        } else {
+            evt.target[0].className = "inp-date";
 
+                        alert('The message was sent');
+
+        }
+
+        console.log(evt.target[0].value)
+        console.log(evt.target[1].value)
+        console.log(evt.target[2].value)
+        
     };
     return (
         <Fragment>
@@ -61,7 +84,7 @@ export default function Header(props) {
                                     <li className="nav-item">
                                         {/* <a className="nav-link" href="/chans/build" >Batteries and Pricing</a> */}
                                         <div class="dropdown">
-                                        <NavLink className="nav-link" exact to="/chans/build/ebike-battery-rebuild">Batteries and Pricing</NavLink>
+                                            <NavLink className="nav-link" exact to="/chans/build/ebike-battery-rebuild">Batteries and Pricing</NavLink>
                                             <div class="dropdown-content">
                                                 <NavLink className="nav-link-a" exact to="/chans/build/ebike-battery-rebuild">Electric bikes</NavLink>
                                                 <NavLink className="nav-link-a" exact to="/chans/build/drill-battery-rebuild">Power Tools</NavLink>
@@ -135,7 +158,7 @@ export default function Header(props) {
                             </div>
                         </div>
                         <div className="col">
-                            <form className="calc" onSubmit={getTickets}>
+                            <form className="calc" onSubmit={sentMessage}>
 
                                 <div className="inp-from-location">
                                     {/* <p className="calc-text-header">Message:</p> */}
@@ -146,7 +169,7 @@ export default function Header(props) {
                                 </div>
                                 <div className="inp-from-date">
                                     <p className="calc-text">Email address*</p>
-                                    <input className="inp-date" id="date" type="mail" />
+                                    <input className="inp-date" id="date" type="email" />
                                 </div>
                                 <div className="inp-from-date">
                                     <p className="calc-text">Your message</p>

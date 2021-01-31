@@ -9,6 +9,8 @@
     "@testing-library/user-event": "^12.6.0",
     "bootstrap": "^4.5.3",
     "history": "^5.0.0",
+    "netlify-cms": "^2.10.84",
+    "netlify-cms-app": "^2.14.14",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

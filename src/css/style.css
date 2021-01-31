@@ -334,6 +334,9 @@ body {
   text-indent: 10px;
   /* background: #FFFFFF right url(../img/group.png) no-repeat; */
 }
+.inp-date-border {
+  border: 1px solid rgb(255, 0, 0);
+}
 
 .inp-big {
   display: inline-block!important;
