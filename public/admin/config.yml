@@ -8,7 +8,7 @@ public_folder: "/img/" # The src attribute for uploaded media will begin with /i
 collections:
   - name: "src/content/reference" # Used in routes, e.g., /admin/collections/blog
     label: "References" # Used in the UI
-    folder: "src/content/" # The path to the folder where the documents are stored
+    folder: "content/reference" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields for each document, usually in front matter
