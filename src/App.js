@@ -54,7 +54,7 @@ function App(props) {
           <Route path='/chans/build/survey-instrument-battery-rebuild' component={SurveyInstrument} />
           <Route path='/chans/build/vacuum-cleaners-battery-rebuild' component={VacuumCleaner} />
           <Route path='/chans/build/battery-rebuild' component={OtherEquipment} />
-          {/* <Route exact path='/' component={Main} /> */}
+          <Route exact path='/' component={Main} />
 
           
           <Route exact path='/chans/build/' component={Main} />
