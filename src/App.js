@@ -34,7 +34,7 @@ function App(props) {
     <>
       <Router history={customHistory}>
         <Switch>
-
+{/* 
           <Route path='/chans/build/contacts' component={Contacts} />
           <Route path='/chans/build/faq' component={Faq} />
           <Route path='/chans/build/warranty' component={Warranty} />
@@ -53,12 +53,31 @@ function App(props) {
           <Route path='/chans/build/spectrum-analyzer-battery-rebuild' component={SpectrumAnalyzer} />
           <Route path='/chans/build/survey-instrument-battery-rebuild' component={SurveyInstrument} />
           <Route path='/chans/build/vacuum-cleaners-battery-rebuild' component={VacuumCleaner} />
-          <Route path='/chans/build/battery-rebuild' component={OtherEquipment} />
+          <Route path='/chans/build/battery-rebuild' component={OtherEquipment} /> */}
+         
+         <Route path='/contacts' component={Contacts} />
+          <Route path='/faq' component={Faq} />
+          <Route path='/warranty' component={Warranty} />
+          <Route path='/references' component={Reference} />
+          <Route path='/chans' component={Chans} />
+          <Route path='/blog' component={Blog} />
+          <Route path='/ebike-battery-rebuild' component={ElectricBikes} />
+          <Route path='/drill-battery-rebuild' component={DrillBattery} />
+          <Route path='/laptop-battery-rebuild' component={LaptopBattery} />
+          <Route path='/air-respirator-battery-rebuild' component={AirRespirator} />
+          <Route path='/barcode-scanner-battery-rebuild' component={BarcodeScanner} />
+          <Route path='/cable-tester-battery-rebuild' component={CableTester} />
+          <Route path='/dive-vehicle-battery-rebuild' component={DivePropulsion} />
+          <Route path='/flash-battery-rebuild' component={FlashSystem} />
+          <Route path='/lawn-care-battery-rebuild' component={LawnCareTool} />
+          <Route path='/spectrum-analyzer-battery-rebuild' component={SpectrumAnalyzer} />
+          <Route path='/survey-instrument-battery-rebuild' component={SurveyInstrument} />
+          <Route path='/vacuum-cleaners-battery-rebuild' component={VacuumCleaner} />
+          <Route path='/battery-rebuild' component={OtherEquipment} />
           <Route exact path='/' component={Main} />
-
-          
-          <Route exact path='/chans/build/' component={Main} />
-          <Route path='/chans/build/' component={Error404} />
+          {/* <Route exact path='/chans/build/' component={Main} /> */}
+          <Route path='/' component={Error404} />
+          {/* <Route path='/chans/build/' component={Error404} /> */}
 
           {/* <Route exact path='/' component={Main} />
           <Route exact path='/contacts' component={Contacts} />

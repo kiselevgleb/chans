@@ -78,27 +78,27 @@ export default function Header(props) {
                                 <ul className="navbar-nav mr-auto">
                                     <li className="nav-item">
                                         {/* <a className="nav-link" href="/chans/build" >Why Rebuild</a> */}
-                                        <NavLink className="nav-link" exact to="/chans/build/">Why Rebuild</NavLink>
+                                        <NavLink className="nav-link" exact to="/">Why Rebuild</NavLink>
 
                                     </li>
                                     <li className="nav-item">
                                         {/* <a className="nav-link" href="/chans/build" >Batteries and Pricing</a> */}
                                         <div class="dropdown">
-                                            <NavLink className="nav-link" exact to="/chans/build/ebike-battery-rebuild">Batteries and Pricing</NavLink>
+                                            <NavLink className="nav-link" exact to="/ebike-battery-rebuild">Batteries and Pricing</NavLink>
                                             <div class="dropdown-content">
-                                                <NavLink className="nav-link-a" exact to="/chans/build/ebike-battery-rebuild">Electric bikes</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/drill-battery-rebuild">Power Tools</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/laptop-battery-rebuild">Laptops</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/air-respirator-battery-rebuild">Air Respirators</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/barcode-scanner-battery-rebuild">Barcode Scanners</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/cable-tester-battery-rebuild">Cable Testers</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/dive-vehicle-battery-rebuild">Dive Vehicles</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/flash-battery-rebuild">Flash systems</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/lawn-care-battery-rebuild">Lawn Care Tools</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/spectrum-analyzer-battery-rebuild">Spectrum Analyzers</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/survey-instrument-battery-rebuild">Survey Instruments</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/vacuum-cleaners-battery-rebuild">Vacuum cleaners</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/battery-rebuild">Other Equipment</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/ebike-battery-rebuild">Electric bikes</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/drill-battery-rebuild">Power Tools</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/laptop-battery-rebuild">Laptops</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/air-respirator-battery-rebuild">Air Respirators</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/barcode-scanner-battery-rebuild">Barcode Scanners</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/cable-tester-battery-rebuild">Cable Testers</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/dive-vehicle-battery-rebuild">Dive Vehicles</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/flash-battery-rebuild">Flash systems</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/lawn-care-battery-rebuild">Lawn Care Tools</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/spectrum-analyzer-battery-rebuild">Spectrum Analyzers</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/survey-instrument-battery-rebuild">Survey Instruments</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/vacuum-cleaners-battery-rebuild">Vacuum cleaners</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/build/battery-rebuild">Other Equipment</NavLink>
 
                                             </div>
                                         </div>
@@ -112,20 +112,20 @@ export default function Header(props) {
                                             <a href="#">Link 3</a>
                                         </div> */}
                                         <div class="dropdown">
-                                            <NavLink className="nav-link" exact to="/chans/build/references">About us and References</NavLink>
+                                            <NavLink className="nav-link" exact to="/references">About us and References</NavLink>
                                             <div class="dropdown-content">
-                                                <NavLink className="nav-link-a" exact to="/chans/build/references">Our clients say</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/blog">Blog</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/chans">Our Story</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/references">Our clients say</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/blog">Blog</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/chans">Our Story</NavLink>
                                             </div>
                                         </div>
                                     </li>
                                     <li className="nav-item">
                                         <div class="dropdown">
-                                            <NavLink className="nav-link" exact to="/chans/build/faq">FAQ</NavLink>
+                                            <NavLink className="nav-link" exact to="/faq">FAQ</NavLink>
                                             <div class="dropdown-content">
-                                                <NavLink className="nav-link-a" exact to="/chans/build/faq">You Ask</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans/build/warranty">Warranty</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/faq">You Ask</NavLink>
+                                                <NavLink className="nav-link-a" exact to="/warranty">Warranty</NavLink>
                                             </div>
                                         </div>
 
@@ -136,7 +136,7 @@ export default function Header(props) {
                                     <li className="nav-item">
                                         {/* <a className="nav-link-end" href="/contacts" >Contact</a> */}
                                         {/* <a className="nav-link-end" href="/chans/build/contacts" >Contact</a> */}
-                                        <NavLink className="nav-link" exact to="/chans/build/contacts">Contact</NavLink>
+                                        <NavLink className="nav-link" exact to="/contacts">Contact</NavLink>
 
 
                                     </li>

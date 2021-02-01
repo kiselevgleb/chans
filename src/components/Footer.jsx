@@ -65,7 +65,7 @@ export default function Footer(props) {
                 <div className="wrap block">
                     <div className="row fb-down">
                         <div className="col left">
-                            <NavLink className="navbar-brand" exact to="/react-shoe-store/build/">
+                            <NavLink className="navbar-brand" exact to="/">
                                 <img className="fb-logo" src={iconLogo} alt="" />
                             </NavLink>
                         </div>

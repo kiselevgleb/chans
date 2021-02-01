@@ -15,7 +15,7 @@ export default function DrillBattery(props) {
                     <div className="col">
                         <section className="top-sales">
                             <h2 className="text-center">Power Tool Battery Rebuild</h2>
-                            <p>We can rebuild Ni-Cd, Ni-Mh and Li-ion batteries. Warranty 6-12 months. <a href="/chans/build/warranty">Read more</a></p>
+                            <p>We can rebuild Ni-Cd, Ni-Mh and Li-ion batteries. Warranty 6-12 months. <a href="/warranty">Read more</a></p>
                             <p>Specifications for your battery can be found on the battery case. Indicated thereon is the battery capacity, voltage and chemistery (Li-ion, Ni-Cd, Ni-Mh). Determine the cost of your battery rebuild using the battery's specifications and the price tables below. So far, as a small supplier, we don't charge the GST/HTS! <b>don't charge the GST/HTS!</b></p>
                             <h4 className="text-center">Li-ion (Lithium ion) battery</h4>
                             <p><b>We use the high-power Samsung cells 2.5 Ah 20C.</b> The higher capacity a battery has the longer it works without charging.</p>
