@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import point from '../img/point.png';
 import ref from '../content/reference.json';
-import ref2 from '../content/2021-02-03-map-id-71-header-72-contact-73-text-74.md';
+import ref2 from '../content/7.md';
 
 export default function Feedback(props) {
     const [refData, setRefData] = useState(ref.slice(0, 3));
@@ -21,7 +21,7 @@ export default function Feedback(props) {
                     <div className="row">
                         <div className="col">
                             <h2>Feedbacks</h2>
-                            <h2>ref2.id</h2>
+                            <h2>7{ref2}</h2>
 
                         </div>
                     </div>
