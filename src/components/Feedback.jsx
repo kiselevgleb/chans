@@ -1,7 +1,9 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import point from '../img/point.png';
 import ref from '../content/reference.json';
-// import ref2 from '../content/';
+// import ref2 from '../content';
+// import * as fs from 'fs';
+// import listReactFiles from 'list-react-files'
 
 export default function Feedback(props) {
     const [refData, setRefData] = useState(ref.slice(0, 3));
@@ -13,7 +15,7 @@ export default function Feedback(props) {
         setRefData(ref.slice(evt.target.id * 3, evt.target.id * 3 + 3));
         evt.target.className = "point";
     }
-
+    // listReactFiles('../content').then(files => console.log(files))
     return (
         <Fragment>
             <main className="container" id="feedback">
