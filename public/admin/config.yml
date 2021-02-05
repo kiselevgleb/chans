@@ -6,24 +6,6 @@ backend:
 media_folder: "/src/img/" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/img/" # The src attribute for uploaded media will begin with /images/uploads
 collections:
-  # - name: "references" # Used in routes, e.g., /admin/collections/blog
-  #   label: "References" # Used in the UI
-  #   folder: "src/content/references" # The path to the folder where the documents are stored
-  #   slug: "references" # Filename template, e.g., YYYY-MM-DD-title.md
-  #   extension: "json"
-  #   format: "json"
-  #   fields: # The fields for each document, usually in front matter
-  #     - {label: "Header", name: "header", widget: "string"}
-  #     - {label: "Text", name: "text", widget: "markdown"}
-  # - name: "contacts" # Used in routes, e.g., /admin/collections/blog
-  #   label: "Contacts" # Used in the UI
-  #   folder: "src/content/contacts" # The path to the folder where the documents are stored
-  #   slug: "contacts" # Filename template, e.g., YYYY-MM-DD-title.md
-  #   extension: "json"
-  #   format: "json"
-  #   fields: # The fields for each document, usually in front matter
-  #     - {label: "Header", name: "header", widget: "string"}
-  #     - {label: "Text", name: "text", widget: "markdown"}
     - name: "references" # Used in routes, e.g., /admin/collections/blog
     label: "References" # Used in the UI
     folder: "src/content/references" # The path to the folder where the documents are stored
