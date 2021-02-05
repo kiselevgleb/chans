@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import Feedback from './Feedback';
-import ref from '../content/contacts.json';
+import ref from '../content/contacts/contacts.json';
 
 export default function Contacts(props) {
 
