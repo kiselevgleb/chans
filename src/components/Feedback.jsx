@@ -1,11 +1,26 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import point from '../img/point.png';
-import ref from '../content/reference.json';
+// import ref from '../content/reference.json';
 import ref2 from '../content/reference/references.json';
 // import * as fs from 'fs';
 // import listReactFiles from 'list-react-files'
 
 export default function Feedback(props) {
+    // const [ref, setRef] = useState(ref2.text);
+    let text = ref2.text;
+    let arr = text.split('\n\n');
+    let ref = [];
+    let id = 0;
+    arr.forEach(e => {
+        ref.push({
+            "id": id,
+            "header": e.split("\"header\":")[1].split("\"contact\":")[0].slice(2, -4),
+            "contact": e.split("\"contact\":")[1].split("\"text\":")[0].slice(2, -4),
+            "text": e.split("\"text\":")[1].slice(2, -2),  
+        });
+        id++;
+    });
+    // console.log(ref[0].contact);
     const [refData, setRefData] = useState(ref.slice(0, 3));
 
     const handleMove = evt => {
