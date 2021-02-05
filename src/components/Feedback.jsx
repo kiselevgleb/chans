@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import point from '../img/point.png';
 import ref from '../content/reference.json';
-// import ref2 from '../../reference/2021-02-04-16-57-11.json';
+import ref2 from '../content/reference/2021-02-04-16-57-11.json';
 // import * as fs from 'fs';
 // import listReactFiles from 'list-react-files'
 
@@ -23,7 +23,7 @@ export default function Feedback(props) {
                     <div className="row">
                         <div className="col">
                             <h2>Feedbacks</h2>
-                            {/* <h2>7{ref2.text}</h2> */}
+                            <h2>7{ref2.text}</h2>
 
                         </div>
                     </div>

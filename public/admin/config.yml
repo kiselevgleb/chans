@@ -8,18 +8,29 @@ public_folder: "/img/" # The src attribute for uploaded media will begin with /i
 collections:
   - name: "reference" # Used in routes, e.g., /admin/collections/blog
     label: "References" # Used in the UI
-    folder: "src/reference" # The path to the folder where the documents are stored
-    # create: true # Allow users to create new documents in this collection
+    folder: "src/content/reference" # The path to the folder where the documents are stored
     slug: "referencereference" # Filename template, e.g., YYYY-MM-DD-title.md
     extension: "json"
     format: "json"
     fields: # The fields for each document, usually in front matter
-      - {label: "Id", name: "id", widget: "number"}
-      - {label: "Header", name: "header", widget: "string"}
-      - {label: "Contact", name: "contact", widget: "string"}
-      # - {label: "Text", name: "text", widget: "string"}
+      # - {label: "Id", name: "id", widget: "number"}
+      # - {label: "Header", name: "header", widget: "string"}
+      # - {label: "Contact", name: "contact", widget: "string"}
       - {label: "Text", name: "text", widget: "markdown"}
-      # - {label: "Publish Date", name: "date", widget: "datetime"}
-      # - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      # - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
-      # - {label: "Body", name: "body", widget: "markdown"}
+    # - name: "reference" # Used in routes, e.g., /admin/collections/blog
+    # label: "References" # Used in the UI
+    # folder: "src/content/reference" # The path to the folder where the documents are stored
+    # # create: true # Allow users to create new documents in this collection
+    # slug: "referencereference" # Filename template, e.g., YYYY-MM-DD-title.md
+    # extension: "json"
+    # format: "json"
+    # fields: # The fields for each document, usually in front matter
+    #   - {label: "Id", name: "id", widget: "number"}
+    #   - {label: "Header", name: "header", widget: "string"}
+    #   - {label: "Contact", name: "contact", widget: "string"}
+    #   # - {label: "Text", name: "text", widget: "string"}
+    #   - {label: "Text", name: "text", widget: "markdown"}
+    #   # - {label: "Publish Date", name: "date", widget: "datetime"}
+    #   # - {label: "Featured Image", name: "thumbnail", widget: "image"}
+    #   # - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
+    #   # - {label: "Body", name: "body", widget: "markdown"}
