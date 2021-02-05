@@ -23,7 +23,7 @@ export default function Feedback(props) {
                     <div className="row">
                         <div className="col">
                             <h2>Feedbacks</h2>
-                            <h2>7{ref2.text}</h2>
+                            {/* <h2>7{ref2.text}</h2> */}
 
                         </div>
                     </div>
