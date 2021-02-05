@@ -1,7 +1,7 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import point from '../img/point.png';
 import ref from '../content/reference.json';
-import ref2 from '../content/reference/2021-02-04-16-57-11.json';
+import ref2 from '../content/reference/reference.json';
 // import * as fs from 'fs';
 // import listReactFiles from 'list-react-files'
 
