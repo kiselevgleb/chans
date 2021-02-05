@@ -3,9 +3,9 @@ import Footer from './Footer';
 import Header from './Header';
 import Feedback from './Feedback';
 import ref from '../content/contacts/contacts.json';
+import parse from 'react-render-html'
 
 export default function Contacts(props) {
-
     return (
         <Fragment>
             <Header history={props.history}></Header>
@@ -14,7 +14,7 @@ export default function Contacts(props) {
                     <div className="col">
                         <section className="top-sales">
                             <h2 className="text-center">{ref.header}</h2>
-                            {ref.text}
+                           {parse(ref.text)}
                         </section>
                     </div>
                 </div>
