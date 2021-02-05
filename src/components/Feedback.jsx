@@ -1,12 +1,8 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import point from '../img/point.png';
-// import ref from '../content/reference.json';
-import ref2 from '../content/reference/references.json';
-// import * as fs from 'fs';
-// import listReactFiles from 'list-react-files'
+import ref2 from '../content/references.json';
 
 export default function Feedback(props) {
-    // const [ref, setRef] = useState(ref2.text);
     let text = ref2.text;
     let arr = text.split('\n\n');
     let ref = [];
@@ -20,7 +16,6 @@ export default function Feedback(props) {
         });
         id++;
     });
-    // console.log(ref[0].contact);
     const [refData, setRefData] = useState(ref.slice(0, 3));
 
     const handleMove = evt => {
@@ -30,7 +25,6 @@ export default function Feedback(props) {
         setRefData(ref.slice(evt.target.id * 3, evt.target.id * 3 + 3));
         evt.target.className = "point";
     }
-    // listReactFiles('../content').then(files => console.log(files))
     return (
         <Fragment>
             <main className="container" id="feedback">
@@ -38,8 +32,6 @@ export default function Feedback(props) {
                     <div className="row">
                         <div className="col">
                             <h2>Feedbacks</h2>
-                            {/* <h2>7{ref2.text}</h2> */}
-
                         </div>
                     </div>
                     <div className="row">
