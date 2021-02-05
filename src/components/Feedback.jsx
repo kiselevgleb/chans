@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect } from 'react';
 import point from '../img/point.png';
-import ref2 from '../content/reference/references.json';
+import ref2 from '../content/references/references.json';
 
 export default function Feedback(props) {
     let text = ref2.text;
