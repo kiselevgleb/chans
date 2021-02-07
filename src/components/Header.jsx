@@ -50,7 +50,7 @@ export default function Header(props) {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", state })
+          body: encode({ "form-name": "contact", ...state })
         })
           .then(() => alert("Success!"))
           .catch(error => alert(error));
@@ -199,7 +199,7 @@ export default function Header(props) {
                                 </div>
                                 <button type="submit" className="but-from">SEND MESSAGE</button>
                             </form> */}
-                            <form className="calc" form-name="contact" onSubmit={handleSubmit}>
+                            <form className="calc" onSubmit={handleSubmit}>
                                 <p>
                                     <label className="calc-text">Name* <input type="text" name="name" value={state.name} onChange={handleChange}/></label>
                                 </p>
