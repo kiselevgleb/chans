@@ -41,23 +41,23 @@ export default function Header(props) {
     const sentMessage = (evt) => {
         evt.preventDefault();
         // if (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test($(evt.target[1].value).val())) { 
-            // /* return true */ }
+        // /* return true */ }
 
-        if (evt.target[0].value==="") {
+        if (evt.target[0].value === "") {
             evt.target[0].className = "inp-date inp-date-border";
             console.log(111)
 
         } else {
             evt.target[0].className = "inp-date";
 
-                        alert('The message was sent');
+            alert('The message was sent');
 
         }
 
         console.log(evt.target[0].value)
         console.log(evt.target[1].value)
         console.log(evt.target[2].value)
-        
+
     };
     return (
         <Fragment>
@@ -158,10 +158,8 @@ export default function Header(props) {
                             </div>
                         </div>
                         <div className="col">
-                            <form className="calc" onSubmit={sentMessage}>
-
+                            {/* <form className="calc" onSubmit={sentMessage}>
                                 <div className="inp-from-location">
-                                    {/* <p className="calc-text-header">Message:</p> */}
                                     <p className="calc-text">Name*</p>
                                     <p className="inline">
                                         <input list="cities-from" id="from" className="inp-date" type="text" placeholder="Откуда" type="search" />
@@ -176,6 +174,20 @@ export default function Header(props) {
                                     <input className="inp-date" id="date" type="text" />
                                 </div>
                                 <button type="submit" className="but-from">SEND MESSAGE</button>
+                            </form> */}
+                            <form className="calc" name="contact" method="POST" data-netlify="true">
+                                <p>
+                                    <label className="calc-text">Name* <input type="text" name="name" /></label>
+                                </p>
+                                <p>
+                                    <label className="calc-text">Email address* <input type="email" name="email" /></label>
+                                </p>
+                                <p>
+                                    <label className="calc-text">Your message<textarea name="message"></textarea></label>
+                                </p>
+                                <p>
+                                    <button type="submit" className="but-from">SEND MESSAGES</button>
+                                </p>
                             </form>
                         </div>
                     </div>
