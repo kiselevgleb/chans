@@ -5,12 +5,13 @@ import iconLogo from '../img/logo-big.png';
 // import { useDispatch, useSelector } from 'react-redux';
 // import { changeInputCheckbox, getCityIdRequest, changeSearchField, getTicketsDataRequest } from '../actions/actionCreators';
 import { NavLink } from 'react-router-dom'
+// import mes from '../content/message/electric-bike.json';
 
 export default function Header(props) {
     // const { search, cities } = useSelector(state => state.skills);
-    // const [name, setName] = useState("");
-    // const [email, setEmail] = useState("");
-    // const [mes, setMes] = useState("");
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [mes, setMes] = useState("");
 
     // const dispatch = useDispatch();
     // const handleSearch = evt => {
@@ -185,6 +186,7 @@ export default function Header(props) {
                                 <p>
                                     <label className="calc-text">Your message<textarea name="message"></textarea></label>
                                 </p>
+                                <p class="field"><div data-netlify-recaptcha="true"></div></p>
                                 <p>
                                     <button type="submit" className="but-from">SEND MESSAGES</button>
                                 </p>
