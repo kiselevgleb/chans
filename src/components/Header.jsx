@@ -176,7 +176,7 @@ export default function Header(props) {
                                 </div>
                                 <button type="submit" className="but-from">SEND MESSAGE</button>
                             </form> */}
-                            <form className="calc" name="contact" method="POST" data-netlify="true">
+                            <form className="calc" name="contact" action="POST" data-netlify="true">
                                 <p>
                                     <label className="calc-text">Name* <input type="text" name="name" /></label>
                                 </p>
