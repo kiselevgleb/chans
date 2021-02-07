@@ -6,6 +6,11 @@ import iconLogo from '../img/logo-big.png';
 // import { changeInputCheckbox, getCityIdRequest, changeSearchField, getTicketsDataRequest } from '../actions/actionCreators';
 import { NavLink } from 'react-router-dom'
 // import mes from '../content/message/electric-bike.json';
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
 
 export default function Header(props) {
     // const { search, cities } = useSelector(state => state.skills);
@@ -45,7 +50,7 @@ export default function Header(props) {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: state
+          body: encode({ "form-name": "contact", state })
         })
           .then(() => alert("Success!"))
           .catch(error => alert(error));
