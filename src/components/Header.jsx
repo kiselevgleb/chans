@@ -199,7 +199,7 @@ export default function Header(props) {
                                 </div>
                                 <button type="submit" className="but-from">SEND MESSAGE</button>
                             </form> */}
-                            <form className="calc" name="contact" netlify netlify-honeypot="bot-field" onSubmit={handleSubmit}>
+                            <form className="calc" name="contact" onSubmit={handleSubmit}>
                                 <p>
                                     <label className="calc-text">Name* <input type="text" name="name" value={state.name} onChange={handleChange}/></label>
                                 </p>
@@ -209,7 +209,7 @@ export default function Header(props) {
                                 <p>
                                     <label className="calc-text">Your message<textarea name="message" value={state.message} onChange={handleChange}></textarea></label>
                                 </p>
-                                <p class="field"><div data-netlify-recaptcha="true"></div></p>
+                                <div class="field"><div data-netlify-recaptcha="true"></div></div>
                                 <p>
                                     <button type="submit" className="but-from">SEND MESSAGES</button>
                                 </p>
