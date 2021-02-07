@@ -201,13 +201,13 @@ export default function Header(props) {
                             </form> */}
                             <form className="calc" name="contact" data-netlify="true" onSubmit={handleSubmit}>
                                 <p>
-                                    <label className="calc-text">Name* <input type="text" name="name" onChange={handleChange}/></label>
+                                    <label className="calc-text">Name* <input type="text" name="name" value={state.name} onChange={handleChange}/></label>
                                 </p>
                                 <p>
-                                    <label className="calc-text">Email address* <input type="email" name="email" onChange={handleChange}/></label>
+                                    <label className="calc-text">Email address* <input type="email" name="email" value={state.email} onChange={handleChange}/></label>
                                 </p>
                                 <p>
-                                    <label className="calc-text">Your message<textarea name="message" onChange={handleChange}></textarea></label>
+                                    <label className="calc-text">Your message<textarea name="message" value={state.message} onChange={handleChange}></textarea></label>
                                 </p>
                                 <p class="field"><div data-netlify-recaptcha="true"></div></p>
                                 <p>
