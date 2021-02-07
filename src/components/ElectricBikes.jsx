@@ -32,6 +32,7 @@ export default function ElectricBikes(props) {
                                     <td className="tb">$ CAD </td><td> 329.00 </td><td> 359.00 </td><td> 379.00 </td><td> 429.00 </td><td> 479.00 </td><td> 439.00 </td><td> 499.00 </td><td> 559.00 </td>
                                 </tr>
                             </table> */}
+                            <img src={Bionx} alt="Bionx"></img>
                         </section>
                     </div>
                 </div>
