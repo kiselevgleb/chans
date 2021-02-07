@@ -183,23 +183,27 @@ export default function Header(props) {
                             </div>
                         </div>
                         <div className="col">
-                            {/* <form className="calc" onSubmit={sentMessage}>
+                            <form className="calc" onSubmit={handleSubmit} data-netlify-recaptcha="true">
                                 <div className="inp-from-location">
                                     <p className="calc-text">Name*</p>
                                     <p className="inline">
-                                        <input list="cities-from" id="from" className="inp-date" type="text" placeholder="Откуда" type="search" />
+                                        <input list="cities-from" id="from" className="inp-date" placeholder="Name" type="text" name="name" value={state.name} onChange={handleChange} />
                                     </p>
                                 </div>
                                 <div className="inp-from-date">
                                     <p className="calc-text">Email address*</p>
-                                    <input className="inp-date" id="date" type="email" />
+                                    <input className="inp-date" id="date" type="email" name="email" value={state.email} onChange={handleChange}/>
                                 </div>
                                 <div className="inp-from-date">
-                                    <p className="calc-text">Your message</p>
-                                    <input className="inp-date" id="date" type="text" />
+                                    {/* <p className="calc-text">Your message</p>
+                                    <input className="inp-date" id="date" type="text" /> */}
+                                    <label className="calc-text">Your message<textarea className="inp-date" name="message" value={state.message} onChange={handleChange}></textarea></label>
                                 </div>
+                                <div data-netlify-recaptcha="true"></div>
+
                                 <button type="submit" className="but-from">SEND MESSAGE</button>
-                            </form> */}
+                            </form>
+{/* 
                             <form className="calc" onSubmit={handleSubmit} data-netlify-recaptcha="true">
                                 <p>
                                     <label className="calc-text">Name* <input type="text" name="name" value={state.name} onChange={handleChange}/></label>
@@ -215,7 +219,7 @@ export default function Header(props) {
                                 <p>
                                     <button type="submit" className="but-from">SEND MESSAGES</button>
                                 </p>
-                            </form>
+                            </form> */}
                         </div>
                     </div>
                 </div>
