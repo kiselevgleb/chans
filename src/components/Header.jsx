@@ -41,6 +41,7 @@ export default function Header(props) {
     // };
 
     const handleSubmit = e => {
+        console.log(state)
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -51,8 +52,12 @@ export default function Header(props) {
   
         e.preventDefault();
       };
-  
-    const handleChange = e => setState({ [e.target.name]: e.target.value });
+      const handleChange = e =>
+      setState({
+        ...state,
+        [e.target.name]: e.target.value,
+      });
+    // const handleChange = e => setState({state.e.target.name = e.target.value });
 
     // const sentMessage = (evt) => {
     //     evt.preventDefault();
