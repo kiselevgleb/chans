@@ -9,9 +9,9 @@ import { NavLink } from 'react-router-dom'
 
 export default function Header(props) {
     // const { search, cities } = useSelector(state => state.skills);
-    const [name, setName] = useState("");
-    const [email, setEmail] = useState("");
-    const [mes, setMes] = useState("");
+    const [state, setState] = useState({ name: "", email: "", message: "" });
+    // const [email, setEmail] = useState("");
+    // const [mes, setMes] = useState("");
 
     // const dispatch = useDispatch();
     // const handleSearch = evt => {
@@ -39,27 +39,40 @@ export default function Header(props) {
     // // }
     // props.history.push(`/order`);
     // };
-    const sentMessage = (evt) => {
-        evt.preventDefault();
-        // if (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test($(evt.target[1].value).val())) { 
-        // /* return true */ }
 
-        if (evt.target[0].value === "") {
-            evt.target[0].className = "inp-date inp-date-border";
-            console.log(111)
+    handleSubmit = e => {
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({ "form-name": "contact", ...state })
+        })
+          .then(() => alert("Success!"))
+          .catch(error => alert(error));
+  
+        e.preventDefault();
+      };
+  
+      handleChange = e => setState({ [e.target.name]: e.target.value });
 
-        } else {
-            evt.target[0].className = "inp-date";
+    // const sentMessage = (evt) => {
+    //     evt.preventDefault();
 
-            alert('The message was sent');
+    //     if (evt.target[0].value === "") {
+    //         evt.target[0].className = "inp-date inp-date-border";
+    //         console.log(111)
 
-        }
+    //     } else {
+    //         evt.target[0].className = "inp-date";
 
-        console.log(evt.target[0].value)
-        console.log(evt.target[1].value)
-        console.log(evt.target[2].value)
+    //         alert('The message was sent');
 
-    };
+    //     }
+
+    //     console.log(evt.target[0].value)
+    //     console.log(evt.target[1].value)
+    //     console.log(evt.target[2].value)
+
+    // };
     return (
         <Fragment>
             <header class="header-container">
@@ -176,15 +189,15 @@ export default function Header(props) {
                                 </div>
                                 <button type="submit" className="but-from">SEND MESSAGE</button>
                             </form> */}
-                            <form className="calc" name="contact" action="POST" data-netlify="true">
+                            <form className="calc" name="contact" action="POST" data-netlify="true" onSubmit={handleSubmit}>
                                 <p>
-                                    <label className="calc-text">Name* <input type="text" name="name" /></label>
+                                    <label className="calc-text">Name* <input type="text" name="name" onChange={handleChange}/></label>
                                 </p>
                                 <p>
-                                    <label className="calc-text">Email address* <input type="email" name="email" /></label>
+                                    <label className="calc-text">Email address* <input type="email" name="email" onChange={handleChange}/></label>
                                 </p>
                                 <p>
-                                    <label className="calc-text">Your message<textarea name="message"></textarea></label>
+                                    <label className="calc-text">Your message<textarea name="message" value={message} onChange={handleChange}></textarea></label>
                                 </p>
                                 <p class="field"><div data-netlify-recaptcha="true"></div></p>
                                 <p>
