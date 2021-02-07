@@ -199,7 +199,7 @@ export default function Header(props) {
                                 </div>
                                 <button type="submit" className="but-from">SEND MESSAGE</button>
                             </form> */}
-                            <form className="calc" name="contact" onSubmit={handleSubmit}>
+                            <form className="calc" form-name="contact" onSubmit={handleSubmit}>
                                 <p>
                                     <label className="calc-text">Name* <input type="text" name="name" value={state.name} onChange={handleChange}/></label>
                                 </p>
