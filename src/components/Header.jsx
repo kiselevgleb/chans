@@ -40,11 +40,11 @@ export default function Header(props) {
     // props.history.push(`/order`);
     // };
 
-    handleSubmit = e => {
+    const handleSubmit = e => {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", ...state })
+          body: state
         })
           .then(() => alert("Success!"))
           .catch(error => alert(error));
@@ -52,7 +52,7 @@ export default function Header(props) {
         e.preventDefault();
       };
   
-      handleChange = e => setState({ [e.target.name]: e.target.value });
+    const handleChange = e => setState({ [e.target.name]: e.target.value });
 
     // const sentMessage = (evt) => {
     //     evt.preventDefault();
@@ -189,7 +189,7 @@ export default function Header(props) {
                                 </div>
                                 <button type="submit" className="but-from">SEND MESSAGE</button>
                             </form> */}
-                            <form className="calc" name="contact" action="POST" data-netlify="true" onSubmit={handleSubmit}>
+                            <form className="calc" name="contact" data-netlify="true" onSubmit={handleSubmit}>
                                 <p>
                                     <label className="calc-text">Name* <input type="text" name="name" onChange={handleChange}/></label>
                                 </p>
@@ -197,7 +197,7 @@ export default function Header(props) {
                                     <label className="calc-text">Email address* <input type="email" name="email" onChange={handleChange}/></label>
                                 </p>
                                 <p>
-                                    <label className="calc-text">Your message<textarea name="message" value={message} onChange={handleChange}></textarea></label>
+                                    <label className="calc-text">Your message<textarea name="message" onChange={handleChange}></textarea></label>
                                 </p>
                                 <p class="field"><div data-netlify-recaptcha="true"></div></p>
                                 <p>
