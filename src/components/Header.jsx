@@ -52,10 +52,11 @@ export default function Header(props) {
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
           body: encode({ "form-name": "contact", ...state })
         })
-          .then(() => alert("Success!"))
+          .then(() => alert("The message was sent!"))
           .catch(error => alert(error));
   
         e.preventDefault();
+        setState({ name: "", email: "", message: "" });
       };
       const handleChange = e =>
       setState({
@@ -199,7 +200,7 @@ export default function Header(props) {
                                 </div>
                                 <button type="submit" className="but-from">SEND MESSAGE</button>
                             </form> */}
-                            <form className="calc" onSubmit={handleSubmit}>
+                            <form className="calc" onSubmit={handleSubmit} data-netlify-recaptcha="true">
                                 <p>
                                     <label className="calc-text">Name* <input type="text" name="name" value={state.name} onChange={handleChange}/></label>
                                 </p>
@@ -209,6 +210,8 @@ export default function Header(props) {
                                 <p>
                                     <label className="calc-text">Your message<textarea name="message" value={state.message} onChange={handleChange}></textarea></label>
                                 </p>
+                                <div data-netlify-recaptcha="true"></div>
+
                                 <p>
                                     <button type="submit" className="but-from">SEND MESSAGES</button>
                                 </p>
