@@ -2,6 +2,9 @@ import React, { Fragment } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import Feedback from './Feedback';
+import ref from '../content/faq/faq.json';
+import parse from 'react-render-html'
+
 export default function Faq(props) {
 
     return (
@@ -11,8 +14,10 @@ export default function Faq(props) {
                 <div className="row">
                     <div className="col">
                         <section className="top-sales">
-                            <h2 className="text-center">Frequently Asked Questions</h2>
-                            <h4>What batteries do we rebuild?</h4>
+                            <h2 className="text-center">{ref.header}</h2>
+                            {parse(ref.text)}
+                            {/* <h2 className="text-center">Frequently Asked Questions</h2> */}
+                            {/* <h4>What batteries do we rebuild?</h4>
                             <p>We rebuild batteries for e-bikes, laptops, power tools, flash systems, auto diagnosis and survey equipment, cable testers, and many other divices with Ni-Cd, Ni-Mh, Li-ion batteries.</p>
                             <br></br>
                             <h4>Can you increase the capacity of my e-bike battery so that I could ride longer?</h4>
@@ -104,7 +109,7 @@ export default function Faq(props) {
                             <p>- Power down the device to avoid additional battery use.</p>
                             <p>- Place your device in a cool, moisture-free environment that's less than 90 F (32 C).</p>
                             <p>- If you plan to store your device for longer than six months, charge it to 50% every six months."</p>
-                            <br></br>
+                            <br></br> */}
                         </section>
                     </div>
                 </div>
