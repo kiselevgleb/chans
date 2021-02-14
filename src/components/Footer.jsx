@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState  } from 'react';
 import { NavLink } from 'react-router-dom'
 import phone from '../img/phone.png';
 import skype from '../img/skype.png';
@@ -7,8 +7,41 @@ import mail from '../img/mail.png';
 import f from '../img/f.png';
 import str from '../img/str.png';
 import iconLogo from '../img/logo-white.png';
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+}
 export default function Footer(props) {
+    const [state, setState] = useState({ name: "", email: "", message: "" });
+    const handleSubmit = e => {
+        if (state.name === "") {
+            e.target[0].className = "inp-sent inp-date-border";
+        }
+        else if (state.email === "") {
+            e.target[1].className = "inp-sent inp-date-border";
+        }
+        else {
+            console.log(state)
+            e.target[0].className = "inp-sent";
+            e.target[1].className = "inp-sent";
+            fetch("/", {
+                method: "POST",
+                headers: { "Content-Type": "application/x-www-form-urlencoded" },
+                body: encode({ "form-name": "contact", ...state })
+            })
+                .then(() => alert("The message was sent!"))
+                .catch(error => alert(error));
 
+            setState({ name: "", email: "", message: "" });
+        }
+        e.preventDefault();
+    };
+    const handleChange = e =>
+        setState({
+            ...state,
+            [e.target.name]: e.target.value,
+        });
     return (
         <Fragment>
             <footer className="fb-container" id="contact">
@@ -47,13 +80,14 @@ export default function Footer(props) {
                                 <p className="fb-text">Будьте в курсе событий</p>
                             </div> */}
                             <div>
-                                <form className="fb-cont fb-form" onSubmit='#'>
+                                <form className="fb-cont fb-form" onSubmit={handleSubmit} data-netlify-recaptcha="true">
                                     <p className="calc-text">Name*</p>
-                                    <input className="inp-sent" type="text" placeholder="e-mail" />
+                                    <input className="inp-sent" type="text" placeholder="Name" name="name" value={state.name} onChange={handleChange}/>
                                     <p className="calc-text">Email address*</p>
-                                    <input className="inp-sent" type="text" placeholder="e-mail" />
+                                    <input className="inp-sent" type="email" name="email" placeholder="Email" value={state.email} onChange={handleChange} />
                                     <p className="calc-text">Your message</p>
-                                    <input className="inp-sent" type="text" placeholder="e-mail" />
+                                    {/* <input className="inp-sent" type="text" placeholder="message" /> */}
+                                    <textarea className="inp-sent" placeholder="Message" name="message" value={state.message} onChange={handleChange}></textarea>
                                     <button type="submit" className="but-sent">SEND MESSAGE</button>
                                 </form>
                             </div>
@@ -74,7 +108,7 @@ export default function Footer(props) {
                             <img className="fb-str" src={str} alt="UP"></img>
                         </div>
                         <div className="col right">
-                            <p className="fb-text"><b>2021 WEB</b></p>
+                            <p className="fb-text"><b>2021</b><a href="https://github.com/kiselevgleb">GK</a></p>
                         </div>
                     </div>
                 </div>
