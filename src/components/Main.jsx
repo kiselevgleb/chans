@@ -4,6 +4,7 @@ import Header from './Header';
 import Work from './Work';
 import Feedback from './Feedback';
 import Footer from './Footer';
+import ref2 from '../content/references/references.json';
 
 export default function Main(props) {
 
@@ -12,7 +13,7 @@ export default function Main(props) {
             <Header history={props.history}></Header>
             <About history={props.history}></About>
             <Work history={props.history}></Work>
-            <Feedback history={props.history}></Feedback>
+            <Feedback history={props.history} content={ref2} h2={"Feedbacks"}></Feedback>
             <Footer history={props.history}></Footer>
         </Fragment>
     )
