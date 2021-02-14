@@ -4,6 +4,7 @@ import Header from './Header';
 import Feedback from './Feedback';
 import Liion from '../img/liion_drill_battery.jpg';
 import Nicd from '../img/nicd_drill_battery.jpg';
+import ref2 from '../content/references/references.json';
 
 export default function DrillBattery(props) {
 
@@ -50,7 +51,7 @@ export default function DrillBattery(props) {
                     </div>
                 </div>
             </main>
-            <Feedback history={props.history}></Feedback>
+            <Feedback history={props.history} content={ref2} h2={"Feedbacks"}></Feedback>
             <Footer history={props.history}></Footer>
         </Fragment>
     )

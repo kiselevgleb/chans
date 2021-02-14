@@ -3,6 +3,7 @@ import Footer from './Footer';
 import Header from './Header';
 import Feedback from './Feedback';
 import M from '../img/3M_Adflo.jpg';
+import ref2 from '../content/references/references.json';
 
 export default function AirRespirator(props) {
 
@@ -24,7 +25,7 @@ export default function AirRespirator(props) {
                     </div>
                 </div>
             </main>
-            <Feedback history={props.history}></Feedback>
+            <Feedback history={props.history} content={ref2} h2={"Feedbacks"}></Feedback>
             <Footer history={props.history}></Footer>
         </Fragment>
     )

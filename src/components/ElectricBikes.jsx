@@ -5,6 +5,7 @@ import Feedback from './Feedback';
 import Bionx from '../img/bionx.jpg';
 import ref from '../content/batteries/electric-bike.json';
 import parse from 'react-render-html'
+import ref2 from '../content/references/references.json';
 
 export default function ElectricBikes(props) {
 
@@ -37,7 +38,7 @@ export default function ElectricBikes(props) {
                     </div>
                 </div>
             </main>
-            <Feedback history={props.history}></Feedback>
+            <Feedback history={props.history} content={ref2} h2={"Feedbacks"}></Feedback>
             <Footer history={props.history}></Footer>
         </Fragment>
     )

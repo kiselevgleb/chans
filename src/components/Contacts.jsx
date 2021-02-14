@@ -4,6 +4,7 @@ import Header from './Header';
 import Feedback from './Feedback';
 import ref from '../content/contacts/contacts.json';
 import parse from 'react-render-html'
+import ref2 from '../content/references/references.json';
 
 export default function Contacts(props) {
     return (
@@ -19,7 +20,7 @@ export default function Contacts(props) {
                     </div>
                 </div>
             </main>
-            <Feedback history={props.history}></Feedback>
+            <Feedback history={props.history} content={ref2} h2={"Feedbacks"}></Feedback>
             <Footer history={props.history}></Footer>
         </Fragment>
     )

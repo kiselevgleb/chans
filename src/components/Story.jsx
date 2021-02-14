@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import Footer from './Footer';
 import Header from './Header';
-import Feedback from './Feedback';
 import ChansTeam from '../img/chans-team.jpg';
 import ChansTeam2 from '../img/chans-team2.jpg';
 

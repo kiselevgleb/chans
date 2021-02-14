@@ -3,6 +3,7 @@ import Footer from './Footer';
 import Header from './Header';
 import Feedback from './Feedback';
 import FlashBattery from '../img/flash-battery.jpg';
+import ref2 from '../content/references/references.json';
 
 export default function FlashSystem(props) {
 
@@ -26,7 +27,7 @@ export default function FlashSystem(props) {
                     </div>
                 </div>
             </main>
-            <Feedback history={props.history}></Feedback>
+            <Feedback history={props.history} content={ref2} h2={"Feedbacks"}></Feedback>
             <Footer history={props.history}></Footer>
         </Fragment>
     )

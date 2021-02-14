@@ -3,6 +3,7 @@ import Footer from './Footer';
 import Header from './Header';
 import Feedback from './Feedback';
 import Dyson from '../img/dyson.jpg';
+import ref2 from '../content/references/references.json';
 
 export default function VacuumCleaner(props) {
 
@@ -25,7 +26,7 @@ export default function VacuumCleaner(props) {
                     </div>
                 </div>
             </main>
-            <Feedback history={props.history}></Feedback>
+            <Feedback history={props.history} content={ref2} h2={"Feedbacks"}></Feedback>
             <Footer history={props.history}></Footer>
         </Fragment>
     )

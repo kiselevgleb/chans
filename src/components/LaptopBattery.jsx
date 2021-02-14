@@ -4,6 +4,7 @@ import Header from './Header';
 import Feedback from './Feedback';
 import Laptop_battery from '../img/laptop_battery.jpg';
 import Laptop from '../img/laptop.jpg';
+import ref2 from '../content/references/references.json';
 
 export default function LaptopBattery(props) {
 
@@ -55,7 +56,7 @@ export default function LaptopBattery(props) {
                     </div>
                 </div>
             </main>
-            <Feedback history={props.history}></Feedback>
+            <Feedback history={props.history} content={ref2} h2={"Feedbacks"}></Feedback>
             <Footer history={props.history}></Footer>
         </Fragment>
     )

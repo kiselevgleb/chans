@@ -5,6 +5,7 @@ import Feedback from './Feedback';
 import GolfCart from '../img/golf-cart.jpg';
 import Lifepack from '../img/lifepack12.jpg';
 import Leica from '../img/leica.jpg';
+import ref2 from '../content/references/references.json';
 
 
 export default function OtherEquipment(props) {
@@ -32,7 +33,7 @@ export default function OtherEquipment(props) {
                     </div>
                 </div>
             </main>
-            <Feedback history={props.history}></Feedback>
+            <Feedback history={props.history}  content={ref2} h2={"Feedbacks"}></Feedback>
             <Footer history={props.history}></Footer>
         </Fragment>
     )
