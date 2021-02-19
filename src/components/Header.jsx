@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import iconRef from '../img/icon.png';
 import iconVec from '../img/vector.png';
-import iconLogo from '../img/logo-big.png';
+import iconLogo from '../img/logo-white.png';
 import { NavLink } from 'react-router-dom'
 const encode = (data) => {
     return Object.keys(data)
@@ -44,7 +44,7 @@ export default function Header(props) {
             <header class="header-container">
                 <div className="row header-contact" >
 
-                    <p className="header-contact-text"> <a className="contact-link" href="tel:226-977-0998">Tel: 226-977-0998</a>, e-mail:<a className="contact-link" href="mailto:info@chansbattery.ca">info@chansbattery.ca</a> </p>
+                    <p className="header-contact-text"> <a className="contact-link" href="tel:226-977-0998">Tel: 226-977-0998</a>, e-mail: <a className="contact-link" href="mailto:info@chansbattery.ca">info@chansbattery.ca</a> <a className="contact-link" href="mailto:chansbattery@gmail.com">chansbattery@gmail.com</a></p>
                 </div>
                 <nav className="navbar">
                     <div className="wrap">
@@ -108,7 +108,7 @@ export default function Header(props) {
                 </nav>
                 <div className="wrap">
                     <div className="row left-text">
-                        <div className="col d-none d-md-block">
+                        <div className="col">
                             <div className="wrap-text">
                                 <img className="header-logo" src={iconLogo} alt="" />
                                 <p className="header-text"><b className="header-text-green">C</b>ustomer Service</p>
@@ -118,7 +118,7 @@ export default function Header(props) {
                                 <p className="header-text"><b className="header-text-green">S</b>kills</p>
                             </div>
                         </div>
-                        <div className="col">
+                        {/* <div className="col">
                             <form className="calc" onSubmit={handleSubmit} data-netlify-recaptcha="true">
                                 <div className="inp-from-location">
                                     <p className="calc-text">Name*</p>
@@ -136,11 +136,11 @@ export default function Header(props) {
                                 <div data-netlify-recaptcha="true"></div>
                                 <button type="submit" className="but-from">SEND MESSAGE</button>
                             </form>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
-                <div className="line">
-                </div>
+                {/* <div className="line line-bottom"> */}
+                {/* </div> */}
             </header>
         </Fragment>)
 }

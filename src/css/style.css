@@ -62,7 +62,7 @@ body {
   display: none;
   position: absolute;
   left: 0px!important;
-  top: 30px!important;
+  top: 28px!important;
   min-width: 120px;
   z-index: 1;
   background: rgba(41, 41, 41, 0.8)!important;
@@ -228,10 +228,11 @@ body {
   background: rgba(41, 41, 41, 0.8);
   width: 237px;
   padding-left: 5px;
+  padding-bottom: 2px;
 }
 
 .header-logo {
-  margin-top: 90px;
+  margin-top: 42px;
 }
 
 .header-text-green {
@@ -413,6 +414,10 @@ body {
   width: 100%;
   border: 2px solid #68bb53;
 }
+/* .line-bottom {
+vertical-align: bottom;
+margin-top: 3%;
+} */
 
 .line-big {
   width: 100%;
