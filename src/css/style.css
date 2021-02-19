@@ -14,12 +14,14 @@ body {
   flex-direction: column;
   align-items: center;
   position: relative;
+  
   /* display: flex;
   flex-direction: column;
   background: rgba(41, 41, 41, 0.6);
   background-size: cover;
   width: 100%; */
 }
+
 
 /* .navbar {
   width: 100%;
@@ -101,10 +103,10 @@ body {
   margin-left: 15px;
   color: #FFFFFF;
   font-weight: 400;
-  margin-left: 25%;
+  /* margin-left: 25%; */
   /* text-align: right; */
   /* width: 400px; */
-  /* display: inline!important; */
+  display: inline-block!important;
 }
 
 /* .header-contact-text-right { */

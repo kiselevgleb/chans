@@ -44,7 +44,9 @@ export default function Header(props) {
             <header class="header-container">
                 <div className="row header-contact" >
 
-                    <p className="header-contact-text"> <a className="contact-link" href="tel:226-977-0998">Tel: 226-977-0998</a>, e-mail: <a className="contact-link" href="mailto:info@chansbattery.ca">info@chansbattery.ca</a> <a className="contact-link" href="mailto:chansbattery@gmail.com">chansbattery@gmail.com</a></p>
+                <p className="header-contact-text"> <b>8216</b> batteries rebuilt. <b>8m3</b> waste reduced. <b>17</b> years’ experience.   <a className="contact-link" href="tel:+1226-977-0998">Tel: +1 226-977-0998</a>, e-mail: <a className="contact-link" href="mailto:info@chansbattery.ca">info@chansbattery.ca</a> <a className="contact-link" href="mailto:chansbattery@gmail.com">chansbattery@gmail.com</a> </p>
+                 {/* <div className="col header-text-left">   <p className="header-contact-text"><b>8216</b> batteries rebuilt <b>8m3</b> waste reduced <b>17</b> years’ experience</p></div> */}
+                 {/* <p className="header-contact-text"><b>8216</b> batteries rebuilt <b>8m3</b> waste reduced <b>17</b> years’ experience</p> */}
                 </div>
                 <nav className="navbar">
                     <div className="wrap">

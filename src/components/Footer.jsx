@@ -52,7 +52,7 @@ export default function Footer(props) {
                             <div className="fb-cont">
                                 <img className="fb-point" src={phone} alt="next"></img>
                                 {/* <p className="fb-text">226-977-0998</p> */}
-                                <a className="contact-link" href="tel:226-977-0998">Tel: 226-977-0998</a>
+                                <a className="contact-link" href="tel:+1-226-977-0998">Tel: +1 226-977-0998</a>
 
                             </div>
                             <div className="fb-cont">
