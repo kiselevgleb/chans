@@ -13,7 +13,7 @@ export default function Main(props) {
             <Header history={props.history}></Header>
             <About history={props.history}></About>
             <Work history={props.history}></Work>
-            <Feedback history={props.history} content={ref2} h2={"Feedbacks"}></Feedback>
+            <Feedback history={props.history} content={ref2} h2={"Reviews"}></Feedback>
             <Footer history={props.history}></Footer>
         </Fragment>
     )

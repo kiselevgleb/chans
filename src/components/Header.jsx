@@ -42,11 +42,21 @@ export default function Header(props) {
     return (
         <Fragment>
             <header class="header-container">
-                <div className="row header-contact" >
+                <div className="wrap-cont">
+                    <div className="row header-contact" >
+                        {/* <div className="wrap"> */}
+                        {/* <p className="header-contact-text"> <b>8216</b> batteries rebuilt. <a className="contact-link" href="tel:+1226-977-0998">Tel: +1 226-977-0998</a>, e-mail: <a className="contact-link" href="mailto:info@chansbattery.ca">info@chansbattery.ca</a> <a className="contact-link" href="mailto:chansbattery@gmail.com">chansbattery@gmail.com</a> </p> */}
+                        <div className="header-contact-text-left col-md-3">
+                            <p className="header-contact-text"> <b>8216</b> batteries rebuilt.</p>
+                        </div>
+                        {/* <div className="col"></div> */}
+                        <div className="header-contact-text-right col-md-9">
+                            <p className="header-contact-text"><a className="contact-link" href="tel:+1226-977-0998">Tel: +1 226-977-0998</a>, e-mail: <a className="contact-link" href="mailto:info@chansbattery.ca">info@chansbattery.ca</a> <a className="contact-link" href="mailto:chansbattery@gmail.com">chansbattery@gmail.com</a> </p>
+                        </div>
 
-                <p className="header-contact-text"> <b>8216</b> batteries rebuilt. <b>8m3</b> waste reduced. <b>17</b> years’ experience.   <a className="contact-link" href="tel:+1226-977-0998">Tel: +1 226-977-0998</a>, e-mail: <a className="contact-link" href="mailto:info@chansbattery.ca">info@chansbattery.ca</a> <a className="contact-link" href="mailto:chansbattery@gmail.com">chansbattery@gmail.com</a> </p>
-                 {/* <div className="col header-text-left">   <p className="header-contact-text"><b>8216</b> batteries rebuilt <b>8m3</b> waste reduced <b>17</b> years’ experience</p></div> */}
-                 {/* <p className="header-contact-text"><b>8216</b> batteries rebuilt <b>8m3</b> waste reduced <b>17</b> years’ experience</p> */}
+                        {/* <div className="col header-text-left">   <p className="header-contact-text"><b>8216</b> batteries rebuilt <b>8m3</b> waste reduced <b>17</b> years’ experience</p></div> */}
+                        {/* <p className="header-contact-text"><b>8216</b> batteries rebuilt <b>8m3</b> waste reduced <b>17</b> years’ experience</p> */}
+                    </div>
                 </div>
                 <nav className="navbar">
                     <div className="wrap">
@@ -79,13 +89,16 @@ export default function Header(props) {
                                     </li>
                                     <li className="nav-item">
                                         <div class="dropdown">
-                                            <NavLink className="nav-link" exact to="/references">About us and References</NavLink>
-                                            <div class="dropdown-content">
-                                                <NavLink className="nav-link-a" exact to="/references">Our clients say</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/blog">Blog</NavLink>
-                                                <NavLink className="nav-link-a" exact to="/chans">Our Story</NavLink>
-                                            </div>
+                                            <NavLink className="nav-link" exact to="/chans">About us</NavLink>
+                                            {/* <div class="dropdown-content"> */}
+                                                {/* <NavLink className="nav-link-a" exact to="/references">Our clients say</NavLink> */}
+                                                {/* <NavLink className="nav-link-a" exact to="/blog">Blog</NavLink> */}
+                                                {/* <NavLink className="nav-link-a" exact to="/chans">Our Story</NavLink> */}
+                                            {/* </div> */}
                                         </div>
+                                    </li>
+                                    <li className="nav-item">
+                                        <NavLink className="nav-link" exact to="/references">Reviews</NavLink>
                                     </li>
                                     <li className="nav-item">
                                         <div class="dropdown">

@@ -8,13 +8,16 @@ body {
 }
 
 .header-contact {
+  max-width: 1150px;
+  /* width: 100%; */
   width: 100%;
-  background: rgba(41, 41, 41, 0.6);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  
+  /* background: rgba(41, 41, 41, 0.6); */
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  /* position: relative; */
+  margin-left: auto!important;
+  margin-right: auto!important;
   /* display: flex;
   flex-direction: column;
   background: rgba(41, 41, 41, 0.6);
@@ -100,7 +103,7 @@ body {
 .header-contact-text {
   margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 15px;
+  /* margin-left: 15px; */
   color: #FFFFFF;
   font-weight: 400;
   /* margin-left: 25%; */
@@ -109,14 +112,14 @@ body {
   display: inline-block!important;
 }
 
-/* .header-contact-text-right { */
-
-/* color: #FFFFFF;
-  text-align: right; */
-
-/* width: 480px; */
-
-/* } */
+.header-contact-text-left {
+  /* max-width: 300px!important; */
+  /* padding-left: 0px!important; */
+  text-align: left;
+}
+.header-contact-text-right {
+  text-align: right;
+}
 
 .header-container {
   display: flex;
@@ -143,6 +146,7 @@ body {
 }
 
 .work-container {
+  max-width: 1150px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -151,6 +155,8 @@ body {
   background: #68bb53 center url(../img/mask-group.gif) no-repeat;
   background-size: cover;
   margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
   /* margin-top: 60px; */
 }
 
@@ -161,6 +167,14 @@ body {
 .big-row {
   margin-top: 60px!important;
   margin-bottom: 50px!important;
+}
+
+.wrap-cont {
+  width: 100%!important;
+  background: rgba(41, 41, 41, 0.6);
+  /* align-items: center!important;
+  display: flex; */
+  /* text-align: center; */
 }
 
 .wrap {
@@ -240,6 +254,7 @@ body {
 .header-text-green {
   color: #68bb53;
   font-weight: bold;
+  text-align: left;
 }
 
 .header-text-bord {
@@ -1019,4 +1034,10 @@ h2 {
   @media (min-width: 30px) {
     max-width: 60%;
   }
+}
+.feedback{
+  text-decoration: underline
+}
+.story-margin{
+margin-top: 20px;
 }

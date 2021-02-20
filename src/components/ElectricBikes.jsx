@@ -38,7 +38,7 @@ export default function ElectricBikes(props) {
                     </div>
                 </div>
             </main>
-            <Feedback history={props.history} content={ref2} h2={"Feedbacks"}></Feedback>
+            {/* <Feedback history={props.history} content={ref2} h2={"Feedbacks"}></Feedback> */}
             <Footer history={props.history}></Footer>
         </Fragment>
     )

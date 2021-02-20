@@ -71,7 +71,7 @@ export default function Footer(props) {
                             </div>
                             <div className="fb-cont">
                                 <img className="fb-point" src={vector} alt="next"></img>
-                                <p className="fb-text">London <br></br>On Canada</p>
+                                <p className="fb-text">London <br></br>ON Canada</p>
                             </div>
                         </div>
                         <div className="col">

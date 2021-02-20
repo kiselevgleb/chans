@@ -31,7 +31,7 @@ export default function Feedback(props) {
                 <div className="wrap block">
                     <div className="row">
                         <div className="col">
-                            <h2>{props.h2}</h2>
+                            <h2 className="feedback">{props.h2}</h2>
                         </div>
                     </div>
                     <div className="row">
