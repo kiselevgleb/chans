@@ -535,6 +535,7 @@ h2 {
   height: 10px;
   margin-top: 70px;
   margin-right: 8px;
+  cursor: pointer;
 }
 
 .point-light {
@@ -1036,8 +1037,13 @@ h2 {
   }
 }
 .feedback{
-  text-decoration: underline
+  text-decoration: underline;
+  cursor: pointer;
 }
 .story-margin{
 margin-top: 20px;
+}
+.visibility{
+  display: none;
+  /* visibility: hidden; */
 }
