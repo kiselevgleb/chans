@@ -1,7 +1,7 @@
 import React, { Fragment, useState } from 'react';
 import Footer from './Footer';
 import Header from './Header';
-import Feedback from './Feedback';
+import Feedback from './FeedbackBig';
 import refElectric from '../content/references/referencesElectric.json';
 import refPower from '../content/references/referencesPower.json';
 import refLaptop from '../content/references/referencesLaptop.json';

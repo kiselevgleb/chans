@@ -51,7 +51,7 @@ body {
 }
 .tab td{
   border: 1px solid  #aeceaf;
-  padding: 10px;
+  padding: 5px;
 }
 .tb{
   text-align: left;
@@ -1043,7 +1043,20 @@ h2 {
 .story-margin{
 margin-top: 20px;
 }
+.bat-list{
+  max-width: 300px!important;
+  min-width: 300px!important;
+  padding-left: 0px!important;
+  /* padding-right: 0px!important; */
+}
 .visibility{
   display: none;
   /* visibility: hidden; */
 }
+.mar-list{
+  margin-bottom: 30px!important;
+}
+/* .pad-col{
+  padding-left: 0px!important;
+
+} */
