@@ -68,8 +68,8 @@ export default function Header(props) {
                                     </li>
                                     <li className="nav-item">
                                         <div class="dropdown">
-                                            <NavLink className="nav-link" exact to="/ebike-battery-rebuild">Batteries and Pricing</NavLink>
-                                            <div class="dropdown-content">
+                                            <NavLink className="nav-link" exact to="/battery-rebuild">Batteries and Pricing</NavLink>
+                                            {/* <div class="dropdown-content">
                                                 <NavLink className="nav-link-a" exact to="/ebike-battery-rebuild">Electric bikes</NavLink>
                                                 <NavLink className="nav-link-a" exact to="/drill-battery-rebuild">Power Tools</NavLink>
                                                 <NavLink className="nav-link-a" exact to="/laptop-battery-rebuild">Laptops</NavLink>
@@ -84,7 +84,7 @@ export default function Header(props) {
                                                 <NavLink className="nav-link-a" exact to="/vacuum-cleaners-battery-rebuild">Vacuum cleaners</NavLink>
                                                 <NavLink className="nav-link-a" exact to="/build/battery-rebuild">Other Equipment</NavLink>
 
-                                            </div>
+                                            </div> */}
                                         </div>
                                     </li>
                                     <li className="nav-item">

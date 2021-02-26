@@ -61,8 +61,8 @@ function App(props) {
           <Route path='/references' component={Reference} />
           <Route path='/chans' component={Chans} />
           <Route path='/blog' component={Blog} />
-          <Route path='/ebike-battery-rebuild' component={ElectricBikes} />
-          <Route path='/drill-battery-rebuild' component={DrillBattery} />
+          <Route path='/battery-rebuild' component={ElectricBikes} />
+          {/* <Route path='/drill-battery-rebuild' component={DrillBattery} />
           <Route path='/laptop-battery-rebuild' component={LaptopBattery} />
           <Route path='/air-respirator-battery-rebuild' component={AirRespirator} />
           <Route path='/barcode-scanner-battery-rebuild' component={BarcodeScanner} />
@@ -73,7 +73,7 @@ function App(props) {
           <Route path='/spectrum-analyzer-battery-rebuild' component={SpectrumAnalyzer} />
           <Route path='/survey-instrument-battery-rebuild' component={SurveyInstrument} />
           <Route path='/vacuum-cleaners-battery-rebuild' component={VacuumCleaner} />
-          <Route path='/battery-rebuild' component={OtherEquipment} />
+          <Route path='/battery-rebuild' component={OtherEquipment} /> */}
           <Route exact path='/' component={Main} />
           {/* <Route exact path='/chans/build/' component={Main} /> */}
           <Route path='/' component={Error404} />

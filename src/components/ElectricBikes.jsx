@@ -14,6 +14,15 @@ import Honeywell from '../img/honeywell.jpg';
 import FlashBattery from '../img/flash-battery.jpg';
 import DiveVehicle from '../img/dive_vehicle.jpg';
 
+import Golf from '../img/golf.jpg';
+import Ice from '../img/ice.jpg';
+import Analyzers from '../img/Analyzers.jpg';
+import Survey from '../img/Survey.jpg';
+import Barcode from '../img/Barcode.jpg';
+import Solowheel from '../img/Solowheel.jpg';
+import Converting from '../img/Converting.jpg';
+import Packs from '../img/Packs.jpg';
+import Snow from '../img/Snow.jpg';
 export default function ElectricBikes(props) {
     const [textArea, setTextArea] = useState("");
 
