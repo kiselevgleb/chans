@@ -2,7 +2,7 @@ import React, { Fragment, useState } from 'react';
 import Footer from './Footer';
 import Header from './Header';
 import Bionx from '../img/bionx.jpg';
-import ref from '../content/batteries/electric-bike.json';
+import ref from '../content/batteries/battery.json';
 import parse from 'react-render-html'
 import Liion from '../img/liion_drill_battery.jpg';
 import Nicd from '../img/nicd_drill_battery.jpg';
