@@ -33,21 +33,51 @@ collections:
     fields: # The fields for each document, usually in front matter
       - {label: "Header", name: "header", widget: "string"}
       - {label: "Text", name: "text", widget: "markdown"}
-  - name: "battery" # Used in routes, e.g., /admin/collections/blog
-    label: "Battery" # Used in the UI
-    folder: "src/content/batteries" # The path to the folder where the documents are stored
-    slug: "battery" # Filename template, e.g., YYYY-MM-DD-title.md
-    extension: "json"
-    format: "json"
-    fields: # The fields for each document, usually in front matter
-      - {label: "Header", name: "header", widget: "string"}
-      - {label: "Contact", name: "contact", widget: "markdown"}
-      - label: "Text"
-        name: "text"
-        widget: "object"
-      fields:
-        # - {label: "Header", name: "header", widget: "string"}
-        - {label: "Text", name: "text", widget: "string"}
+
+
+
+  # - name: "battery" # Used in routes, e.g., /admin/collections/blog
+  #   label: "Battery" # Used in the UI
+  #   folder: "src/content/batteries" # The path to the folder where the documents are stored
+  #   slug: "battery" # Filename template, e.g., YYYY-MM-DD-title.md
+  #   extension: "json"
+  #   format: "json"
+  #   files: # The fields for each document, usually in front matter
+  #     - {label: "Header", name: "header", widget: "string"}
+  #     - {label: "Contact", name: "contact", widget: "markdown"}
+  #     - label: "Text"
+  #       name: "text"
+  #       widget: "object"
+  #     fields:
+  #       # - {label: "Header", name: "header", widget: "string"}
+  #       - {label: "Text", name: "text", widget: "string"}
+
+
+  - name: 'battery'
+    label: 'Battery'
+    # delete: false # Prevent users from deleting documents in this collection
+    # editor:
+    #   preview: false
+    files:
+      - name: 'battery'
+        label: 'Battery content'
+        file: 'src/content/batteries/battery.json'
+        description: 'General Battery content'
+        fields:
+          - { label: 'Header', name: 'header', widget: 'string' }
+          - {label: "Contact", name: "contact", widget: "markdown"}
+          - label: 'Text'
+            name: text
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Text',
+                  name: text,
+                  widget: markdown,
+                }
+              - { label: 'Header', name: header, widget: markdown }
+
+
   - name: "faq" # Used in routes, e.g., /admin/collections/blog
     label: "Faq" # Used in the UI
     folder: "src/content/faq" # The path to the folder where the documents are stored
