@@ -68,14 +68,10 @@ collections:
           - {label: "Contact", name: "contact", widget: "markdown"}
           - label: 'Text'
             name: text
-            widget: 'object'
+             widget: list
             fields:
-              - {
-                  label: 'Text',
-                  name: text,
-                  widget: markdown,
-                }
               - { label: 'Header', name: header, widget: markdown }
+              - { label: 'Text', name: text, widget: markdown}
 
 
   - name: "faq" # Used in routes, e.g., /admin/collections/blog
