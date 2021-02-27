@@ -34,25 +34,6 @@ collections:
       - {label: "Header", name: "header", widget: "string"}
       - {label: "Text", name: "text", widget: "markdown"}
 
-
-
-  # - name: "battery" # Used in routes, e.g., /admin/collections/blog
-  #   label: "Battery" # Used in the UI
-  #   folder: "src/content/batteries" # The path to the folder where the documents are stored
-  #   slug: "battery" # Filename template, e.g., YYYY-MM-DD-title.md
-  #   extension: "json"
-  #   format: "json"
-  #   files: # The fields for each document, usually in front matter
-  #     - {label: "Header", name: "header", widget: "string"}
-  #     - {label: "Contact", name: "contact", widget: "markdown"}
-  #     - label: "Text"
-  #       name: "text"
-  #       widget: "object"
-  #     fields:
-  #       # - {label: "Header", name: "header", widget: "string"}
-  #       - {label: "Text", name: "text", widget: "string"}
-
-
   - name: 'battery'
     label: 'Battery'
     # delete: false # Prevent users from deleting documents in this collection
@@ -71,7 +52,7 @@ collections:
             widget: list
             summary: '{{fields.header}} - {{fields.text}}'
             fields:
-              - { label: 'Header', name: header, widget: markdown }
+              - { label: 'Header', name: header, widget: string }
               - { label: 'Text', name: text, widget: markdown}
 
 
