@@ -51,23 +51,17 @@ export default function Footer(props) {
                             <h2 className="h2-black h2-mar">Contact us</h2>
                             <div className="fb-cont">
                                 <img className="fb-point" src={phone} alt="next"></img>
-                                {/* <p className="fb-text">226-977-0998</p> */}
                                 <a className="contact-link" href="tel:+1-226-977-0998">Tel: +1 226-977-0998</a>
 
                             </div>
                             <div className="fb-cont">
                                 <img className="fb-point" src={mail} alt="next"></img>
-                                {/* <p className="fb-text">info@chansbattery.ca</p> */}
                                 <a className="contact-link" href="mailto:info@chansbattery.ca">info@chansbattery.ca</a>
 
                             </div>
                             <div className="fb-cont">
-                                {/* <img className="fb-point" src={skype} alt="next"></img> */}
-                                {/* <p className="fb-text">skype</p> */}
                                 <img className="fb-point-small" src={f} alt="Facebook"></img>
                                 <a className="contact-link" href="https://www.facebook.com/chansbatteryrebuild" >  Facebook</a>
-
-                                {/* <p className="fb-text">skype</p> */}
                             </div>
                             <div className="fb-cont">
                                 <img className="fb-point" src={vector} alt="next"></img>
@@ -76,9 +70,6 @@ export default function Footer(props) {
                         </div>
                         <div className="col">
                             <h2 className="h2-black h2-mar">Message</h2>
-                            {/* <div className="fb-cont">
-                                <p className="fb-text">Будьте в курсе событий</p>
-                            </div> */}
                             <div>
                                 <form className="fb-cont fb-form" onSubmit={handleSubmit} data-netlify-recaptcha="true">
                                     <p className="calc-text">Name*</p>
@@ -86,7 +77,6 @@ export default function Footer(props) {
                                     <p className="calc-text">Email address*</p>
                                     <input className="inp-sent" type="email" name="email" placeholder="Email" value={state.email} onChange={handleChange} />
                                     <p className="calc-text">Your message</p>
-                                    {/* <input className="inp-sent" type="text" placeholder="message" /> */}
                                     <textarea className="inp-sent" placeholder="Message" name="message" value={state.message} onChange={handleChange}></textarea>
                                     <button type="submit" className="but-sent">SEND MESSAGE</button>
                                 </form>

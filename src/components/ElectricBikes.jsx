@@ -55,19 +55,6 @@ export default function ElectricBikes(props) {
                         <section className="top-sales ">
                             {parse(textArea)}     
                             {parse(ref.contact)}
-                            {/* <img src={Spectrum} alt='Spectrum'  width = '300px'></img>
-                            <img src={Greenworks} alt='Spectrum'  width = '300px'></img>
-
-
-                            <img src={Golf} alt='Spectrum'  width = '300px'></img>
-                            <img src={Ice} alt='Spectrum'  width = '300px'></img>
-                            <img src={Analyzers} alt='Spectrum'  width = '300px'></img>
-                            <img src={Survey} alt='Spectrum'  width = '300px'></img>
-                            <img src={Barcode} alt='Spectrum'  width = '300px'></img>
-                            <img src={Solowheel} alt='Spectrum'  width = '300px'></img>
-                            <img src={Converting} alt='Spectrum'  width = '300px'></img>
-                            <img src={Packs} alt='Spectrum'  width = '300px'></img>
-                            <img src={Snow} alt='Spectrum'  width = '300px'></img> */}
                         </section>
                     </div>
                 </div>

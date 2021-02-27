@@ -10,7 +10,6 @@ export default function About(props) {
                 <div className="wrap block">
                     <div className="row">
                         <div className="col">
-                            {/* <h2>Which Do You Prefer?</h2> */}
                         </div>
                     </div>
                     <div className="row">

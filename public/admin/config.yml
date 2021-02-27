@@ -36,9 +36,6 @@ collections:
 
   - name: 'battery'
     label: 'Battery'
-    # delete: false # Prevent users from deleting documents in this collection
-    # editor:
-    #   preview: false
     files:
       - name: 'battery'
         label: 'Battery content'
@@ -74,34 +71,3 @@ collections:
     format: "json"
     fields: # The fields for each document, usually in front matter
       - {label: "Stat", name: "stat", widget: "string"}
-
-    # - name: "message" # Used in routes, e.g., /admin/collections/blog
-    # label: "Message" # Used in the UI
-    # folder: "src/content/message" # The path to the folder where the documents are stored
-    # create: true # Allow users to create new documents in this collection
-    # slug: "{{slug}}-{{year}}-{{month}}-{{day}}-{{hour}}-{{minute}}-{{second}}"
-    # extension: "json"
-    # format: "json"
-    # fields: # The fields for each document, usually in front matter
-    #   - {label: "Name", name: "Name", widget: "string"}
-    #   - {label: "Email", name: "Email", widget: "string"}
-    #   - {label: "Message", name: "message", widget: "markdown"}
-
-          
-    # - name: "reference" # Used in routes, e.g., /admin/collections/blog
-    # label: "References" # Used in the UI
-    # folder: "src/content/reference" # The path to the folder where the documents are stored
-    # # create: true # Allow users to create new documents in this collection
-    # slug: "referencereference" # Filename template, e.g., YYYY-MM-DD-title.md
-    # extension: "json"
-    # format: "json"
-    # fields: # The fields for each document, usually in front matter
-    #   - {label: "Id", name: "id", widget: "number"}
-    #   - {label: "Header", name: "header", widget: "string"}
-    #   - {label: "Contact", name: "contact", widget: "string"}
-    #   # - {label: "Text", name: "text", widget: "string"}
-    #   - {label: "Text", name: "text", widget: "markdown"}
-    #   # - {label: "Publish Date", name: "date", widget: "datetime"}
-    #   # - {label: "Featured Image", name: "thumbnail", widget: "image"}
-    #   # - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
-    #   # - {label: "Body", name: "body", widget: "markdown"}

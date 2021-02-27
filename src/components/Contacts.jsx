@@ -1,9 +1,7 @@
 import React, { Fragment } from 'react';
 import Footer from './Footer';
 import Header from './Header';
-import Feedback from './Feedback';
 import ref from '../content/contacts/contacts.json';
-import parse from 'react-render-html'
 
 export default function Contacts(props) {
     let phone = `tel:${ref.phone}`;
@@ -26,12 +24,10 @@ export default function Contacts(props) {
                             <p>{ref.text[0]}</p>
                             <p>{ref.text[1]}</p>
                             <p>{ref.text[2]}</p>
-                            {/* {parse(ref.text)} */}
                         </section>
                     </div>
                 </div>
             </main>
-            {/* <Feedback history={props.history} content={ref2} h2={"Feedbacks"}></Feedback> */}
             <Footer history={props.history}></Footer>
         </Fragment>
     )
