@@ -63,6 +63,18 @@ collections:
       - {label: "Header", name: "header", widget: "string"}
       - {label: "Text", name: "text", widget: "markdown"}
 
+  - name: "about" # Used in routes, e.g., /admin/collections/blog
+    label: "About us" # Used in the UI
+    folder: "src/content/about" # The path to the folder where the documents are stored
+    slug: "about" # Filename template, e.g., YYYY-MM-DD-title.md
+    extension: "json"
+    format: "json"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Header", name: "header", widget: "string"}
+      - {label: "Text", name: "text", widget: "markdown"}
+
+
+
   - name: "stat" # Used in routes, e.g., /admin/collections/blog
     label: "Stat" # Used in the UI
     folder: "src/content/stat" # The path to the folder where the documents are stored
