@@ -25,18 +25,23 @@ import Packs from '../img/Packs.jpg';
 import Snow from '../img/Snow.jpg';
 import Spectrum from '../img/spectrum-r&h.jpg';
 import Greenworks from '../img/greenworks.jpg';
+import classNames from 'classnames/bind';
+
 
 export default function ElectricBikes(props) {
     const [textArea, setTextArea] = useState("");
-
+    const [textId, setTextId] = useState("");
+    
     const handleMove = id => {
-        if (textArea === ""||textArea !== ref.text[id].text) {
+        if (textArea === "" || textArea !== ref.text[id].text) {
             setTextArea(ref.text[id].text)
         }
         else if (textArea === ref.text[id].text) {
             setTextArea("")
         }
+        setTextId(id)
     }
+
     return (
         <Fragment>
             <Header history={props.history}></Header>
@@ -46,14 +51,14 @@ export default function ElectricBikes(props) {
                         {ref.text.map(o =>
                             <div className="col feedback" onClick={() => handleMove(o.id)}>
                                 <section className="top-sales">
-                                    <h4 className="mar-list">{o.header}</h4>
+                                    <h4 className={classNames({"mar-list": true, "list-bold": o.id==textId})} key={o.id} onClick={(e) => { window.scrollTo(0, 500);}}>{o.header}</h4>
                                 </section>
                             </div>
                         )}
                     </div>
                     <div className="col">
                         <section className="top-sales ">
-                            {parse(textArea)}     
+                            {parse(textArea)}
                             {parse(ref.contact)}
                         </section>
                     </div>

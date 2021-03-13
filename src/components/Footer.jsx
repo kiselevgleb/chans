@@ -95,7 +95,7 @@ export default function Footer(props) {
                         </div>
                         <div className="col center">
 
-                            <img className="fb-str" src={str} alt="UP"></img>
+                            <img className="fb-str" src={str} alt="UP" onClick={() => {window.scrollTo(0, 0)}}></img>
                         </div>
                         <div className="col right">
                             <p className="fb-text"><b>2021</b><a href="https://github.com/kiselevgleb">GK</a></p>
