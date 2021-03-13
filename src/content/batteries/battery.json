@@ -74,23 +74,23 @@
     },
     {
       "id": 14,
+      "header": "Snow removal tools",
+      "text": "<p>We can rebuild Li-ion batteries for Snow Showels. Warranty 12 months.<a href='/chans/build/warranty'>Read more</a></p><p>The price depends on the battery's voltage and capacity. Specifications for your battery can be found on the battery case.</p><p>For example, to rebuild <b>Snow Joe iBat40 </b>40V 4Ah costs only <b>139.00</b> and the capacity will be 5Ah!. Compare with the new one for 200.00!</p><img src='/static/media/Snow.3d95a9e0.jpg' alt='Snow removal tools'  width = '500px'></img>"
+    },
+    {
+      "id": 15,
       "header": "Spectrum Analyzers",
       "text": "<p>We can rebuild Ni-Cd, Ni-Mh and Li-ion batteries for Spectrum Analyzers such as <b> Rohde & Schwarz, Tektronix, Precision </b> and other brands. Warranty 6-12 months. <a href='/chans/build/warranty'>Read more</a></p><p>The price depends on the battery's voltage, capacity, and chemistry. Specifications for your battery can be found on the battery case.</p><p>For example, to rebuild a <b>R&S </b> FSH8.08 Li-ion 7.2V 7800 mAh costs <b>44.00 only. </b> Compare with the new one for 200.00!</p><img src='/static/media/spectrum-r&h.c255de40.jpg' alt='Spectrum'  width = '300px'></img>"
     },
     {
-      "id": 15,
+      "id": 16,
       "header": "Converting Lead Acid battery into Li-ion",
       "text": "<p>The main reason to convert a Lead Acid battery into Li-ion is decreasing the battery weight alongside with the increased capacity. Basically, only the  old case is used where the new Li-ion cells and the BMS (Battery Management System) are installed. Plus, a Li-ion charger should be used.</p><p>Tell us what the capacity you’d like to have and the dimensions and shape of the case.</p><img src='/static/media/Converting.1063bdb7.jpg' alt='Converting Lead Acid battery into Li-ion'  width = '500px'></img>"
     },
     {
-      "id": 16,
+      "id": 17,
       "header": "Customized Li-ion Packs",
       "text": "<p>We can build a Li-ion pack according to your specs.</p><p></p>Tell us what the voltage and capacity you’d like to have and the dimensions and shape of the case.<p><img src='/static/media/Packs.69eb3d14.jpg' alt='Customized Li-ion Packs'  width = '500px'></img>"
-    },
-    {
-      "id": 17,
-      "header": "Snow removal tools",
-      "text": "<p>We can rebuild Li-ion batteries for Snow Showels. Warranty 12 months.<a href='/chans/build/warranty'>Read more</a></p><p>The price depends on the battery's voltage and capacity. Specifications for your battery can be found on the battery case.</p><p>For example, to rebuild <b>Snow Joe iBat40 </b>40V 4Ah costs only <b>139.00</b> and the capacity will be 5Ah!. Compare with the new one for 200.00!</p><img src='/static/media/Snow.3d95a9e0.jpg' alt='Snow removal tools'  width = '500px'></img>"
     }
   ]
 }
