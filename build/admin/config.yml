@@ -6,18 +6,80 @@ backend:
 media_folder: "/src/img/" # Media files will be stored in the repo under static/images/uploads
 public_folder: "/img/" # The src attribute for uploaded media will begin with /images/uploads
 collections:
-  - name: "src/content/reference" # Used in routes, e.g., /admin/collections/blog
-    label: "references" # Used in the UI
-    folder: "src/content/reference" # The path to the folder where the documents are stored
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+  - name: "references" # Used in routes, e.g., /admin/collections/blog
+    label: "References" # Used in the UI
+    folder: "src/content/references" # The path to the folder where the documents are stored
+    slug: "references" # Filename template, e.g., YYYY-MM-DD-title.md
+    extension: "json"
+    format: "json"
     fields: # The fields for each document, usually in front matter
-      - {label: "Id", name: "id", widget: "number"}
       - {label: "Header", name: "header", widget: "string"}
-      - {label: "Contact", name: "contact", widget: "string"}
-      # - {label: "Text", name: "text", widget: "string"}
       - {label: "Text", name: "text", widget: "markdown"}
-      # - {label: "Publish Date", name: "date", widget: "datetime"}
-      # - {label: "Featured Image", name: "thumbnail", widget: "image"}
-      # - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
-      # - {label: "Body", name: "body", widget: "markdown"}
+  - name: "contacts" # Used in routes, e.g., /admin/collections/blog
+    label: "Contacts" # Used in the UI
+    folder: "src/content/contacts" # The path to the folder where the documents are stored
+    slug: "contacts" # Filename template, e.g., YYYY-MM-DD-title.md
+    extension: "json"
+    format: "json"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Header", name: "header", widget: "string"}
+      - {label: "Text", name: "text", widget: "markdown"}
+  - name: "main" # Used in routes, e.g., /admin/collections/blog
+    label: "Main" # Used in the UI
+    folder: "src/content/main" # The path to the folder where the documents are stored
+    slug: "main" # Filename template, e.g., YYYY-MM-DD-title.md
+    extension: "json"
+    format: "json"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Header", name: "header", widget: "string"}
+      - {label: "Text", name: "text", widget: "markdown"}
+
+  - name: 'battery'
+    label: 'Battery'
+    files:
+      - name: 'battery'
+        label: 'Battery content'
+        file: 'src/content/batteries/battery.json'
+        description: 'General Battery content'
+        fields:
+          - { label: 'Header', name: 'header', widget: 'string' }
+          - {label: "Contact", name: "contact", widget: "markdown"}
+          - label: 'Text'
+            name: text
+            widget: list
+            summary: '{{fields.header}} - {{fields.text}}'
+            fields:
+              - { label: 'Header', name: header, widget: string }
+              - { label: 'Text', name: text, widget: markdown}
+
+
+  - name: "faq" # Used in routes, e.g., /admin/collections/blog
+    label: "Faq" # Used in the UI
+    folder: "src/content/faq" # The path to the folder where the documents are stored
+    slug: "faq" # Filename template, e.g., YYYY-MM-DD-title.md
+    extension: "json"
+    format: "json"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Header", name: "header", widget: "string"}
+      - {label: "Text", name: "text", widget: "markdown"}
+
+  - name: "about" # Used in routes, e.g., /admin/collections/blog
+    label: "About us" # Used in the UI
+    folder: "src/content/about" # The path to the folder where the documents are stored
+    slug: "about" # Filename template, e.g., YYYY-MM-DD-title.md
+    extension: "json"
+    format: "json"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Header", name: "header", widget: "string"}
+      - {label: "Text", name: "text", widget: "markdown"}
+
+
+
+  - name: "stat" # Used in routes, e.g., /admin/collections/blog
+    label: "Stat" # Used in the UI
+    folder: "src/content/stat" # The path to the folder where the documents are stored
+    slug: "stat" # Filename template, e.g., YYYY-MM-DD-title.md
+    extension: "json"
+    format: "json"
+    fields: # The fields for each document, usually in front matter
+      - {label: "Stat", name: "stat", widget: "string"}
